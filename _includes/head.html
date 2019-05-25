@@ -1,0 +1,19 @@
+<head>
+	<meta charset="UTF-8">
+	<title>{{ page.title }}</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- General CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/includes/menu.css">
+
+	<!-- Layout-Specific CSS -->
+	<link rel="stylesheet" href="/assets/css/custom/layouts/{{ page.layout }}.css">
+
+	<!-- Page-Specific / Include-Specific CSS -->
+	{% for css in page.page_css %}
+		<link rel="stylesheet" href="{{ css }}">
+	{% endfor %}
+</head>
