@@ -5,7 +5,7 @@ title: Home
 
 <div class="container-main">
 	<h1 class="header"> Welcome to My Website. </h1>
-	<button type="button" class="btn btn-primary"> Click me </button>
+	<img src="/assets/images/whale.png" width="500" style="margin-top: 50px;"/>
 </div>
 
 <style>
