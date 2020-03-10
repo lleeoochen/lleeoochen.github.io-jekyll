@@ -2,5 +2,12 @@
 ---
 
 body {
-
+	background-image: url('/assets/images/background.png');
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: #cccccc;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }

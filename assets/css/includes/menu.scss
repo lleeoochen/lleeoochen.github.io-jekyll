@@ -1,15 +1,16 @@
 ---
-color:
-  background: "#ffffff"
-  foreground: "#000000"
-  hover:      "#87CEFA"
 ---
+:root {
+  --background-color: #2f4f4fb3;
+  --foreground-color: #ffffff;
+  --hover-color: #87CEFA;
+}
 
 .navbar {
   box-shadow: 1px 1px 3px black;
   opacity: 1;
   z-index: 100;
-  background-color: {{ page.color.background }};
+  background-color: var(--background-color);
   height: 60px;
   padding-left: 30px;
 
@@ -30,34 +31,34 @@ color:
 .navbar-nav .nav-link {
   padding-left: 20px;
   white-space: nowrap;
-  color: {{ page.color.foreground }} !important;
-  background-color: {{ page.color.background }} !important;
+  color: var(--foreground-color) !important;
+  background-color: unset !important;
 
   &:hover {
-    color: {{ page.color.hover }} !important;
+    color: var(--hover-color) !important;
   }
 
   hr {
-    background-color: {{ page.color.foreground }};
+    background-color: var(--foreground-color);
   }
 }
 
 .navbar-nav li .dropdown-menu {
-  background-color: {{ page.color.background }};
+  background-color: var(--background-color);
   background-clip: unset;
   margin: 0;
 
   .dropdown-item {
-    color: {{ page.color.foreground }} !important;
+    color: var(--foreground-color) !important;
 
     &:hover {
-      color: {{ page.color.hover }} !important;
+      color: var(--hover-color) !important;
       background-color: unset;
     }
   }
 
   hr {
-    background-color: {{ page.color.foreground }};
+    background-color: var(--foreground-color);
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -67,7 +68,7 @@ color:
   line-height: 48px;
   height: 48px;
   padding-right: 24px;
-  color: {{ page.color.foreground }};
+  color: var(--foreground-color);
 
   h4 {
     line-height: unset;
@@ -75,7 +76,7 @@ color:
   }
 
   &:hover {
-    color: {{ page.color.hover }} !important;
+    color: var(--hover-color) !important;
   }
 
   img {
