@@ -1,5 +1,16 @@
 ---
 ---
+@media screen and (orientation: portrait) {
+  :root {
+    --home-whale-size: 50vw;
+  }
+}
+@media screen and (orientation: landscape) {
+  :root {
+    --home-whale-size: 50vh;
+  }
+}
+
 :root {
   --background-color: #2f4f4fb3;
 }
@@ -28,6 +39,7 @@ body {
 #whale {
 	position: relative;
 	display: none;
+	width: var(--home-whale-size);
 }
 
 #whale-wrap {

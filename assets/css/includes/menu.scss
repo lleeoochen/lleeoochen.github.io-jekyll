@@ -12,17 +12,16 @@
 }
 
 :root {
-  --background-color: #2f4f4fb3;
-  --foreground-color: #ffffff;
-  --hover-color: #87CEFA;
+  --menu-background-color: #2f4f4fed;
+  --menu-foreground-color: #ffffff;
+  --menu-hover-color: #87CEFA;
 }
 
 .navbar {
   box-shadow: 1px 1px 3px black;
   opacity: 1;
   z-index: 100;
-  background-color: var(--background-color);
-  height: 60px;
+  background-color: var(--menu-background-color);
   padding-left: 30px;
   position: fixed;
   width: 100%;
@@ -44,34 +43,34 @@
 .navbar-nav .nav-link {
   padding-left: 20px;
   white-space: nowrap;
-  color: var(--foreground-color) !important;
+  color: var(--menu-foreground-color) !important;
   background-color: unset !important;
 
   &:hover {
-    color: var(--hover-color) !important;
+    color: var(--menu-hover-color) !important;
   }
 
   hr {
-    background-color: var(--foreground-color);
+    background-color: var(--menu-foreground-color);
   }
 }
 
 .navbar-nav li .dropdown-menu {
-  background-color: var(--background-color);
+  background-color: var(--menu-background-color);
   background-clip: unset;
   margin: 0;
 
   .dropdown-item {
-    color: var(--foreground-color) !important;
+    color: var(--menu-foreground-color) !important;
 
     &:hover {
-      color: var(--hover-color) !important;
+      color: var(--menu-hover-color) !important;
       background-color: unset;
     }
   }
 
   hr {
-    background-color: var(--foreground-color);
+    background-color: var(--menu-foreground-color);
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -81,12 +80,12 @@
   line-height: 48px;
   height: 48px;
   padding-right: 24px;
-  color: var(--foreground-color);
+  color: var(--menu-foreground-color);
   font-size: var(--menu-title-size);
   padding-left: 10px;
 
   &:hover {
-    color: var(--hover-color) !important;
+    color: var(--menu-hover-color) !important;
   }
 
   img {
