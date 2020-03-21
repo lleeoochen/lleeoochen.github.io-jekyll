@@ -1,0 +1,61 @@
+---
+---
+:root {
+  --background-color: #2f4f4fb3;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.btn {
+	background-color: var(--background-color);
+	border-color: white !important;
+	color: white;
+}
+
+.btn:hover {
+	background-color: white !important;
+	border-color: white !important;
+	color: var(--background-color);
+}
+
+.container-main {
+	text-align: center;
+}
+
+#whale {
+	position: relative;
+	display: none;
+}
+
+#whale-wrap {
+	position: relative;
+	animation: updown 0.5s alternate infinite ease-in-out;
+}
+
+.divein {
+	animation: divein 1.5s alternate ease-in-out;
+	display: unset !important;
+}
+
+.diveout {
+	animation: diveout 1.5s alternate ease-in-out;
+	display: unset !important;
+}
+
+@keyframes updown {
+	to { transform: translatey(100px);}
+}
+
+@keyframes divein {
+	0%   {left: 70%; transform: rotate(45deg);}
+	100% {left: 0; transform: rotate(0deg);}
+	display: block;
+}
+
+@keyframes diveout {
+	0%   {left: 0; transform: rotate(0deg);}
+	100% {left: -70%; transform: rotate(-45deg);}
+}
