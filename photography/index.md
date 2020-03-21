@@ -1,3 +1,4 @@
 ---
+title: Photography
 layout: default
 ---

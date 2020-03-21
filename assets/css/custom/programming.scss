@@ -1,9 +1,6 @@
 ---
 ---
 :root {
-	--title-size: 4vh;
-	--text-size: 2.4vh;
-	--card-width: 50vh;
 	--margin-size: 3vh;
 }
 
@@ -13,43 +10,4 @@
 	justify-content: center;
 	padding-top: calc(var(--margin-size) * 3);
 	padding-bottom: calc(var(--margin-size) * 3);
-}
-
-.info-card {
-	background-color: #ffffffe0;
-	color: black;
-	box-shadow: 5px 5px 1px grey;
-
-	text-align: center;
-	width: var(--card-width);
-	padding: var(--margin-size);
-	border-radius: calc(var(--margin-size) / 3);
-	margin: calc(var(--margin-size) / 2);
-
-	.title {
-		font-size: var(--title-size);
-		margin-bottom: calc(var(--margin-size) / 2);
-	}
-
-	.description {
-		font-size: var(--text-size);
-		margin-bottom: var(--margin-size);
-	}
-
-	.media {
-		margin-bottom: var(--margin-size);
-		* {
-			width: 100%;
-			border-radius: calc(var(--margin-size) / 4);
-		}
-	}
-
-	.bottom {
-		.btn {
-			background-image: linear-gradient(#2f4f4fb3 90%, black 50%);
-			border: unset;
-			color: black;
-			margin: calc(var(--margin-size) / 4);
-		}
-	}
 }

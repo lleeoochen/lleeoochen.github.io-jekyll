@@ -1,5 +1,16 @@
 ---
 ---
+@media screen and (orientation: portrait) {
+  :root {
+    --menu-title-size: 3vh;
+  }
+}
+@media screen and (orientation: landscape) {
+  :root {
+    --menu-title-size: 3vh;
+  }
+}
+
 :root {
   --background-color: #2f4f4fb3;
   --foreground-color: #ffffff;
@@ -71,11 +82,8 @@
   height: 48px;
   padding-right: 24px;
   color: var(--foreground-color);
-
-  h4 {
-    line-height: unset;
-    padding-left: 10px;
-  }
+  font-size: var(--menu-title-size);
+  padding-left: 10px;
 
   &:hover {
     color: var(--hover-color) !important;
@@ -88,4 +96,11 @@
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.navbar-toggler {
+  span {
+    background-image: url('/assets/images/menu.png');
+
+  }
 }

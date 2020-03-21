@@ -1,4 +1,5 @@
 ---
+title: Music Recordings
 layout: default
 page_css:
 - "/assets/css/custom/recording.css"

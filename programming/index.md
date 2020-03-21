@@ -1,4 +1,5 @@
 ---
+title: Software Projects
 layout: default
 page_css:
 - "/assets/css/custom/programming.css"
