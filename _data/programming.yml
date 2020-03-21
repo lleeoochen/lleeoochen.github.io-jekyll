@@ -18,7 +18,7 @@
 
 - title:       "My Personal Website"
   description: "This website is built to display my side projects, music recordings, and other hobbies."
-  product:     "https://weitungchen.herokuapp.com/home"
+  product:     "https://weitungchen.com/"
   repository:  "https://github.com/lleeoochen/my-site"
   image:       "/assets/images/my-website.png"
 
