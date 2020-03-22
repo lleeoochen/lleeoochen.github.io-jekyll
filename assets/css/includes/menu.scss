@@ -1,33 +1,17 @@
 ---
 ---
-@media screen and (orientation: portrait) {
-  :root {
-    --menu-title-size: 3vh;
-    --menu-margin-size: 0.5vh;
-    --menu-toggle-size: 5vh;
-  }
-}
-@media screen and (orientation: landscape) {
-  :root {
-    --menu-title-size: 4vh;
-    --menu-margin-size: 0.5vh;
-    --menu-toggle-size: 5vh;
-  }
-}
-
 :root {
-  --menu-background-color: #2f4f4fed;
-  --menu-foreground-color: #ffffff;
-  --menu-hover-color: #87CEFA;
+  --background-color: #2f4f4fb3;
+  --foreground-color: #ffffff;
+  --hover-color: #87CEFA;
 }
 
 .navbar {
   box-shadow: 1px 1px 3px black;
   opacity: 1;
   z-index: 100;
-  background-color: var(--menu-background-color);
-  padding: var(--menu-margin-size) !important;
-  padding-left: calc(var(--menu-margin-size) * 6) !important;
+  background-color: var(--background-color);
+  padding-left: 30px;
   position: fixed;
   width: 100%;
 
@@ -46,50 +30,54 @@
 }
 
 .navbar-nav .nav-link {
-  padding-left: var(--menu-margin-size) !important;
+  padding-left: 20px;
   white-space: nowrap;
-  color: var(--menu-foreground-color) !important;
+  color: var(--foreground-color) !important;
   background-color: unset !important;
-  font-size: calc(var(--menu-title-size) * 0.7);
 
   &:hover {
-    color: var(--menu-hover-color) !important;
+    color: var(--hover-color) !important;
   }
 
   hr {
-    background-color: var(--menu-foreground-color);
+    background-color: var(--foreground-color);
   }
 }
 
 .navbar-nav li .dropdown-menu {
-  background-color: var(--menu-background-color);
+  background-color: var(--background-color);
   background-clip: unset;
   margin: 0;
 
   .dropdown-item {
-    color: var(--menu-foreground-color) !important;
+    color: var(--foreground-color) !important;
 
     &:hover {
-      color: var(--menu-hover-color) !important;
+      color: var(--hover-color) !important;
       background-color: unset;
     }
   }
 
   hr {
-    background-color: var(--menu-foreground-color);
+    background-color: var(--foreground-color);
     margin-left: 15px;
     margin-right: 15px;
   }
 }
 
 #home-nav {
-  padding-right: calc(var(--menu-margin-size) * 6);
-  color: var(--menu-foreground-color);
-  font-size: var(--menu-title-size);
-  font-weight: bold;
+  line-height: 48px;
+  height: 48px;
+  padding-right: 24px;
+  color: var(--foreground-color);
+
+  h4 {
+    line-height: unset;
+    padding-left: 10px;
+  }
 
   &:hover {
-    color: var(--menu-hover-color) !important;
+    color: var(--hover-color) !important;
   }
 
   img {
@@ -99,11 +87,4 @@
 
 .dropdown:hover .dropdown-menu {
   display: block;
-}
-
-.navbar-toggler {
-  padding: var(--menu-margin-size);
-  width: var(--menu-toggle-size);
-
-  /*font-size: var(--menu-title-size);*/
 }
