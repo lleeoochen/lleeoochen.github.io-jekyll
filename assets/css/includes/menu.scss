@@ -3,11 +3,15 @@
 @media screen and (orientation: portrait) {
   :root {
     --menu-title-size: 3vh;
+    --menu-margin-size: 0.5vh;
+    --menu-toggle-size: 5vh;
   }
 }
 @media screen and (orientation: landscape) {
   :root {
-    --menu-title-size: 3vh;
+    --menu-title-size: 4vh;
+    --menu-margin-size: 0.5vh;
+    --menu-toggle-size: 5vh;
   }
 }
 
@@ -22,7 +26,8 @@
   opacity: 1;
   z-index: 100;
   background-color: var(--menu-background-color);
-  padding-left: 30px;
+  padding: var(--menu-margin-size) !important;
+  padding-left: calc(var(--menu-margin-size) * 6) !important;
   position: fixed;
   width: 100%;
 
@@ -41,10 +46,11 @@
 }
 
 .navbar-nav .nav-link {
-  padding-left: 20px;
+  padding-left: var(--menu-margin-size) !important;
   white-space: nowrap;
   color: var(--menu-foreground-color) !important;
   background-color: unset !important;
+  font-size: calc(var(--menu-title-size) * 0.7);
 
   &:hover {
     color: var(--menu-hover-color) !important;
@@ -77,12 +83,10 @@
 }
 
 #home-nav {
-  line-height: 48px;
-  height: 48px;
-  padding-right: 24px;
+  padding-right: calc(var(--menu-margin-size) * 6);
   color: var(--menu-foreground-color);
   font-size: var(--menu-title-size);
-  padding-left: 10px;
+  font-weight: bold;
 
   &:hover {
     color: var(--menu-hover-color) !important;
@@ -98,8 +102,8 @@
 }
 
 .navbar-toggler {
-  span {
-    background-image: url('/assets/images/menu.png');
+  padding: var(--menu-margin-size);
+  width: var(--menu-toggle-size);
 
-  }
+  /*font-size: var(--menu-title-size);*/
 }
