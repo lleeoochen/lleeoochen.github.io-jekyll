@@ -1,0 +1,7 @@
+---
+title: Redirecting...
+layout: default
+---
+<script>
+window.location = '/web-chess';
+</script>
