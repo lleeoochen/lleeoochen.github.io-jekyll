@@ -1,0 +1,23 @@
+---
+---
+@media screen and (orientation: portrait) {
+  :root {
+    --resume-width-size: 97vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  :root {
+    --resume-width-size: 97vh;
+  }
+}
+
+.container-main {
+	text-align: center;
+	padding-bottom: 0;
+}
+
+.pdf-viewer {
+	width: var(--resume-width-size);
+	height: calc(100vh - 12vh);
+}

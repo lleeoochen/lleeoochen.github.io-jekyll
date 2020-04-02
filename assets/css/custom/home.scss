@@ -3,11 +3,21 @@
 @media screen and (orientation: portrait) {
   :root {
     --home-whale-size: 50vw;
+    --home-whale-vertical: 20vw;
+    --home-margin-size: 10vw;
+    --home-title-size:  10vw;
+    --home-btn-font-size:  5vw;
+    --home-btn-margin-size:  3vw;
   }
 }
 @media screen and (orientation: landscape) {
   :root {
     --home-whale-size: 50vh;
+    --home-whale-vertical: 20vh;
+    --home-margin-size: 5vh;
+    --home-title-size:  7vh;
+    --home-btn-font-size:  3vh;
+    --home-btn-margin-size:  1vh;
   }
 }
 
@@ -20,26 +30,36 @@ body {
 	overflow-y: hidden;
 }
 
-.btn {
-	background-color: var(--background-color);
-	border-color: white !important;
-	color: white;
-}
-
-.btn:hover {
-	background-color: white !important;
-	border-color: white !important;
-	color: var(--background-color);
-}
-
 .container-main {
 	text-align: center;
+}
+
+.header {
+	font-size: var(--home-title-size);
+	margin-top: var(--home-margin-size);
 }
 
 #whale {
 	position: relative;
 	display: none;
 	width: var(--home-whale-size);
+	margin-top: var(--home-margin-size);
+}
+
+#whale-btn {
+	background-color: var(--background-color);
+	border-color: white !important;
+	color: white;
+	font-size: var(--home-btn-font-size) !important;
+	padding: calc(var(--home-btn-margin-size) * 0.5) var(--home-btn-margin-size) !important;
+	border-radius: calc(var(--home-btn-margin-size) * 0.5);
+	margin-top: var(--home-margin-size) !important;
+}
+
+#whale-btn:hover {
+	background-color: white !important;
+	border-color: white !important;
+	color: var(--background-color);
 }
 
 #whale-wrap {
@@ -58,7 +78,7 @@ body {
 }
 
 @keyframes updown {
-	to { transform: translatey(100px);}
+	to {transform: translatey(var(--home-whale-vertical));}
 }
 
 @keyframes divein {

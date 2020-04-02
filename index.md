@@ -6,10 +6,10 @@ page_css:
 ---
 
 <div class="container-main">
-	<h1 class="header"> Welcome to My Website. </h1>
+	<div class="header"> Welcome to My Website! </div>
 	<div id="whale-btn" class="btn" onclick="toggleWhale()"> Dive In </div>
 	<div id="whale-wrap">
-		<img id="whale" src="/assets/images/whale.png" width="500" style="margin-top: 50px;"/>
+		<img id="whale" src="/assets/images/whale.png"/>
 	</div>
 </div>
 

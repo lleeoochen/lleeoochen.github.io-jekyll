@@ -1,6 +1,20 @@
 ---
 ---
+@media screen and (orientation: portrait) {
+  :root {
+    --layout-margin-top: 3vw;
+    --layout-margin-bottom: 20vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  :root {
+    --layout-margin-top: 10vh;
+    --layout-margin-bottom: 3vw;
+  }
+}
 
 .container-main {
-	 padding-top: 100px;
+	padding-top: var(--layout-margin-top);
+	padding-bottom: var(--layout-margin-bottom);
 }
