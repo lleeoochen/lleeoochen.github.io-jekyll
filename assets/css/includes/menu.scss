@@ -3,7 +3,7 @@
 @media screen and (orientation: portrait) {
   :root {
     --menu-margin-size: 1vw;
-    --menu-icon-size:   15vw;
+    --menu-icon-size:   12vw;
     --menu-title-size:  3vw;
     --menu-font-size:   2.25vw;
     --menu-bottom:      0;
@@ -37,7 +37,9 @@
 
 .menu {
   box-shadow: var(--menu-margin-size) var(--menu-margin-size) calc(var(--menu-margin-size) * 3) black;
-  background-color: var(--menu-background-color);
+  // background-color: var(--menu-background-color);
+  // background-image: linear-gradient(180deg, #00000000, #523c7f);
+  backgorund-image: linear-gradient(180deg, #17cbf1b0, #523c7f);
   position: fixed;
   width: 100%;
   bottom: var(--menu-bottom);
