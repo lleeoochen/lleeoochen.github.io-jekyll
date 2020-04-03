@@ -9,6 +9,7 @@
     --menu-bottom:      0;
 
     --menu-background-color: #2f4f4f;
+    --menu-background-gradient: linear-gradient(0deg, #020017, #1f5dab);
   }
   .submenu-text {
     display: none !important;
@@ -24,6 +25,7 @@
     --menu-bottom:      unset;
 
     --menu-background-color: #2f4f4fb3;
+    --menu-background-gradient: linear-gradient(180deg, #020017, #1f5dab);
   }
   .submenu-image {
     display: none !important;
@@ -41,7 +43,7 @@
   // background-image: linear-gradient(180deg, #00000000, #523c7f);
   // background-image: linear-gradient(180deg, #523c7f, #17cbf1b0);
   // background-image: linear-gradient(0deg, #14101b, #e81b1b);
-  background-image: linear-gradient(180deg, #000000, #1f5dab);
+  background-image: var(--menu-background-gradient);
   position: fixed;
   width: 100%;
   bottom: var(--menu-bottom);
