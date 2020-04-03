@@ -39,7 +39,9 @@
   box-shadow: var(--menu-margin-size) var(--menu-margin-size) calc(var(--menu-margin-size) * 3) black;
   // background-color: var(--menu-background-color);
   // background-image: linear-gradient(180deg, #00000000, #523c7f);
-  background-image: linear-gradient(180deg, #17cbf1b0, #523c7f);
+  // background-image: linear-gradient(180deg, #523c7f, #17cbf1b0);
+  // background-image: linear-gradient(0deg, #14101b, #e81b1b);
+  background-image: linear-gradient(180deg, #000000, #1f5dab);
   position: fixed;
   width: 100%;
   bottom: var(--menu-bottom);
