@@ -33,3 +33,10 @@
   product:     "/assets/applications/android_notebook_app.apk"
   repository:  "https://github.com/lleeoochen/android-notebook"
   video:       "https://www.youtube.com/embed/UnPiLyx3pAI"
+
+- title:       "Mahjong Score Tracker"
+  description: "This website is built to easily track, compute, and lookup rules for Chinese Mahjong Game."
+  product:     "https://weitungchen.com/mahjong/"
+  repository:  "https://github.com/lleeoochen/mahjong"
+  image:       "/assets/images/mahjong.png"
+
