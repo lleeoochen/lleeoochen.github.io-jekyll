@@ -10,11 +10,11 @@
   repository:  "https://github.com/lleeoochen/web-chess"
   image:       "/assets/images/web-chess.png"
 
-- title:       "Disk Galaxy"
-  description: "This is a 2D shooting game made using SFML and C++. You can fight against AI enemies."
-  product:     ""
-  repository:  "https://github.com/lleeoochen/Disk-Galaxy"
-  video:       "https://www.youtube.com/embed/Ohq8ZeJKKxo"
+- title:       "Mahjong Score Tracker"
+  description: "This website is built to easily track, compute, and lookup rules for Chinese Mahjong Game."
+  product:     "https://weitungchen.com/mahjong/"
+  repository:  "https://github.com/lleeoochen/mahjong"
+  image:       "/assets/images/mahjong.png"
 
 - title:       "My Personal Website"
   description: "This website is built to display my side projects, music recordings, and other hobbies."
@@ -28,15 +28,16 @@
   repository:  "https://github.com/lleeoochen/chrome-editor"
   image:       "/assets/images/chrome-editor.png"
 
+- title:       "Disk Galaxy"
+  description: "This is a 2D shooting game made using SFML and C++. You can fight against AI enemies."
+  product:     ""
+  repository:  "https://github.com/lleeoochen/Disk-Galaxy"
+  video:       "https://www.youtube.com/embed/Ohq8ZeJKKxo"
+
 - title:       "Notebook App"
   description: "Thi/s is a simple notebook app for Android users."
   product:     "/assets/applications/android_notebook_app.apk"
   repository:  "https://github.com/lleeoochen/android-notebook"
   video:       "https://www.youtube.com/embed/UnPiLyx3pAI"
 
-- title:       "Mahjong Score Tracker"
-  description: "This website is built to easily track, compute, and lookup rules for Chinese Mahjong Game."
-  product:     "https://weitungchen.com/mahjong/"
-  repository:  "https://github.com/lleeoochen/mahjong"
-  image:       "/assets/images/mahjong.png"
 
