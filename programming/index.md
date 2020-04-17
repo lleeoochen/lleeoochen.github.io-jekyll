@@ -10,3 +10,4 @@ page_css:
 		{% include card.html data=data %}
 	{% endfor %}
 </div>
+
