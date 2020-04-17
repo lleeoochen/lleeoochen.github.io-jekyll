@@ -1,11 +1,11 @@
 - title:       "Web Chess"
-  description: "This is an online chess game for chess lovers, with AI bot included."
+  description: "This is a beautiful chess platform for chess lovers and friends."
   product:     "https://lleeoochen.github.io/web-chess/"
   repository:  "https://github.com/lleeoochen/web-chess"
   image:       "/assets/images/web-chess.png"
 
 - title:       "PDF Library"
-  description: "This website allows users to conveniently store and view PDF books and sheet music, anytime and anywhere."
+  description: "This website allows users to conveniently store and view PDF books and sheet music, anywhere."
   product:     "https://lleeoochen.github.io/pdf-library/"
   repository:  "https://github.com/lleeoochen/pdf-library"
   image:       "/assets/images/pdf-library.png"
