@@ -2,14 +2,15 @@
 ---
 @media screen and (orientation: portrait) {
   :root {
-    --menu-margin-size: 1vw;
-    --menu-icon-size:   12vw;
+    --menu-margin-size: 2vw;
+    --menu-icon-size:   8vw;
     --menu-title-size:  3vw;
     --menu-font-size:   2.25vw;
     --menu-bottom:      0;
 
     --menu-background-color: #2f4f4f;
     --menu-background-gradient: linear-gradient(0deg, #020017, #1f5dab);
+    --menu-clip-path: unset;
   }
   .submenu-text {
     display: none !important;
@@ -20,12 +21,13 @@
   :root {
     --menu-margin-size: 1vh;
     --menu-icon-size:   15vh;
-    --menu-title-size:  3vh;
-    --menu-font-size:   2.25vh;
+    --menu-title-size:  5vh;
+    --menu-font-size:   3vh;
     --menu-bottom:      unset;
 
     --menu-background-color: #2f4f4fb3;
-    --menu-background-gradient: linear-gradient(180deg, #020017, #1f5dab);
+    --menu-background-gradient: linear-gradient(180deg, #1f5dab00, #1f5dab);
+    --menu-clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 20% 80%, 0 100%)
   }
   .submenu-image {
     display: none !important;
@@ -37,20 +39,22 @@
   --menu-hover-color: #87CEFA;
 }
 
-.menu {
-  box-shadow: var(--menu-margin-size) var(--menu-margin-size) calc(var(--menu-margin-size) * 3) black;
-  // background-color: var(--menu-background-color);
-  // background-image: linear-gradient(180deg, #00000000, #523c7f);
-  // background-image: linear-gradient(180deg, #523c7f, #17cbf1b0);
-  // background-image: linear-gradient(0deg, #14101b, #e81b1b);
-  background-image: var(--menu-background-gradient);
+.menu-wrap {
+  filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
   position: fixed;
   width: 100%;
   bottom: var(--menu-bottom);
+
+  .menu {
+    box-shadow: var(--menu-margin-size) var(--menu-margin-size) calc(var(--menu-margin-size) * 3) black;
+    background-image: var(--menu-background-gradient);
+    clip-path: var(--menu-clip-path);
+  }
 }
 
 .submenu-text {
   display: flex;
+    transform: rotate(-1deg);
 
   .menu-link {
     white-space: nowrap;
@@ -68,7 +72,8 @@
   }
   .menu-title {
     font-size: var(--menu-title-size);
-    padding: calc(var(--menu-margin-size) * 2) calc(var(--menu-margin-size) * 4);
+    padding: calc(var(--menu-margin-size) * 5) calc(var(--menu-margin-size) * 4);
+    padding-top: calc(var(--menu-margin-size));
 
     &:hover {
       color: var(--menu-hover-color) !important;
@@ -76,7 +81,8 @@
   }
   .menu-text {
     font-size: var(--menu-font-size);
-    padding: calc(var(--menu-margin-size) * 2);
+    padding: calc(var(--menu-margin-size) * 5);
+    padding-top: calc(var(--menu-margin-size));
   }
 }
 
