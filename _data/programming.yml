@@ -22,6 +22,12 @@
   repository:  "https://github.com/n-duncan/GOLD-Digger"
   image:       "/assets/images/gold-digger.png"
 
+- title:       "Gaucho Rides"
+  description: "This is a cross-platform mobile application that provides a convenient and secure way for UCSB students to arrange rides with peers."
+  product:     ""
+  repository:  "https://github.com/jrecinos98/Gaucho-Rides"
+  video:       "https://drive.google.com/file/d/1ry8i-UI3GlmbN253z59SXYoh52atd02e/preview"
+
 - title:       "My Personal Website"
   description: "This website is built to display my side projects, music recordings, and other hobbies."
   product:     "https://weitungchen.com/"
