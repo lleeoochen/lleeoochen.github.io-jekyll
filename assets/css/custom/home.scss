@@ -64,16 +64,20 @@ body {
 
 #whale-wrap {
 	position: relative;
+}
+
+.idle {
 	animation: updown 0.5s alternate infinite ease-in-out;
+	display: unset !important;
 }
 
 .divein {
-	animation: divein 1.5s alternate ease-in-out;
+	animation: divein 1.0s alternate ease-in-out;
 	display: unset !important;
 }
 
 .diveout {
-	animation: diveout 1.5s alternate ease-in-out;
+	animation: diveout 1.0s alternate ease-in-out;
 	display: unset !important;
 }
 
@@ -82,14 +86,14 @@ body {
 }
 
 @keyframes divein {
-	0%   {left: 70%; transform: rotate(45deg);}
-	100% {left: 0; transform: rotate(0deg);}
+	0%   {margin-top: 120%; transform: rotate(90deg);}
+	100% {margin-top: var(--home-margin-size); transform: rotate(0deg);}
 	display: block;
 }
 
 @keyframes diveout {
 	0%   {left: 0; transform: rotate(0deg);}
-	100% {left: -70%; transform: rotate(-45deg);}
+	100% {margin-top: 20%; left: -70%; transform: rotate(-45deg);}
 }
 
 .menu-link-home {

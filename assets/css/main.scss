@@ -7,10 +7,12 @@ body {
 	padding: 0;
 	color: white;
 	background-color: black;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position-x: center;
 	font-family: 'Neucha', cursive;
     // font-family: 'Spectral', serif !important;
+    max-width: 100%;
+    background-clip: border-box;
 }

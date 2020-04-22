@@ -14,12 +14,11 @@
 
 .container-main {
 	text-align: center;
-	padding-bottom: 0;
 }
 
 .pdf-viewer {
 	width: var(--resume-width-size);
-	height: calc(100vh - 12vh);
+	height: calc(100vh - var(--layout-margin-top));
 }
 
 .menu-link-resume {

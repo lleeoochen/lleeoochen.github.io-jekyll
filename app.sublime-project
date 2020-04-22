@@ -10,6 +10,7 @@
 			],
 			"folder_exclude_patterns": [
 				".sass-cache",
+				".jekyll-cache",
 				"_site",
 				".idea"
 			]

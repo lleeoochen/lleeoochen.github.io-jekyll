@@ -19,16 +19,20 @@ var whale_present = false;
 function toggleWhale() {
 	if (whale_present) {
 		$('#whale').addClass('diveout');
-		$('#whale').removeClass('divein');
+		$('#whale').removeClass('idle');
 		$('#whale-btn').text('Dive In');
 		setTimeout(() => {
 			$('#whale').removeClass('diveout');
-		}, 1500);
+		}, 1000);
 	}
 	else {
 		$('#whale').addClass('divein');
 		$('#whale').removeClass('diveout');
 		$('#whale-btn').text('Dive Out');
+		setTimeout(() => {
+			$('#whale').removeClass('divein');
+			$('#whale').addClass('idle');
+		}, 1000);
 	}
 
 	whale_present = !whale_present;
