@@ -5,7 +5,7 @@ description: This website is built to display my side projects, music recordings
 url:         'www.weitungchen.com' # remote url  (github/website url)
 # url:         'localhost:4000' # local url
 
-baseUrl:     '/' # local baseUrl (github repo name)
+baseUrl:     '' # local baseUrl (github repo name)
 # baseUrl:     '' # local baseUrl
 
 # Build settings
