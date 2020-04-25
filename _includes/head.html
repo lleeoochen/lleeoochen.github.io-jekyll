@@ -1,23 +1,30 @@
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>{{ page.title }}</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Tab Title -->
+<title>{{ page.title }}</title>
 
-	<!-- General CSS -->
-	<link rel="stylesheet" href="/assets/css/main.css">
-	<link rel="stylesheet" href="/assets/css/includes/menu.css">
-	<link rel="stylesheet" href="/assets/css/includes/card.css">
+<!-- Tab Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseUrl }}/assets/favicon.ico" />
 
-	<!-- Layout-Specific CSS -->
-	<link rel="stylesheet" href="/assets/css/layouts/{{ page.layout }}.css">
+<!-- Plugin CSS -->
+<link rel="stylesheet" href="{{ site.baseUrl }}/plugins/css/bootstrap.css">
+<link rel="stylesheet" href="{{ site.baseUrl }}/plugins/css/sweetalert.css">
 
-	<!-- Page-Specific / Include-Specific CSS -->
-	{% for css in page.page_css %}
-		<link rel="stylesheet" href="{{ css }}">
-	{% endfor %}
+<!-- Font CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ site.baseUrl }}/css/main.css">
+<link rel="stylesheet" href="{{ site.baseUrl }}/css/modal.css">
+<link rel="stylesheet" href="{{ site.baseUrl }}/css/menu.css">
+<link rel="stylesheet" href="{{ site.baseUrl }}/css/card.css">
+
+{% for css in page.css %}
+	<link rel="stylesheet" href="{{ site.baseUrl }}/css/{{ css }}">
+{% endfor %}
+
 </head>

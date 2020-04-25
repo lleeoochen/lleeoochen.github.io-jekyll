@@ -1,0 +1,41 @@
+---
+---
+@media screen and (orientation: portrait) {
+  :root {
+    --layout-margin-top: 3vw;
+    --layout-margin-bottom: 20vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  :root {
+    --layout-margin-top: 15vh;
+    --layout-margin-bottom: 3vw;
+  }
+}
+
+body {
+	background-image: url('/assets/images/background2.jpg');
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: black;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position-x: center;
+	font-family: 'Neucha', cursive;
+    max-width: 100%;
+    background-clip: border-box;
+}
+
+.container-main {
+	padding-top: var(--layout-margin-top);
+	padding-bottom: var(--layout-margin-bottom);
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}

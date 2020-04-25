@@ -15,5 +15,19 @@
 				".idea"
 			]
 		},
+		{
+			"path": "../personal-website-1",
+			"file_exclude_patterns": [
+				"*.lock",
+				".jekyll-metadata",
+				"*.sublime-project"
+			],
+			"folder_exclude_patterns": [
+				".sass-cache",
+				".jekyll-cache",
+				"_site",
+				".idea"
+			]
+		}
 	]
 }

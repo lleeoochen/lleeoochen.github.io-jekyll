@@ -1,0 +1,97 @@
+---
+---
+@media screen and (orientation: portrait) {
+	:root {
+		--modal-title-size:         6vw;
+		--modal-width:              90vw;
+		--modal-height:             25vw;
+		--modal-border-size:        2vw;
+		--modal-border-radius:      0.5vw;
+		--modal-margin-size:        5vw;
+		--modal-button-title-size:  calc(var(--modal-title-size) * 0.8);
+		--modal-button-margin-size: 6vw;
+		--modal-dialog-width:       80%;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	:root {
+		--modal-title-size:         4vh;
+		--modal-width:              80vh;
+		--modal-height:             25vh;
+		--modal-border-size:        2vh;
+		--modal-border-radius:      0.5vh;
+		--modal-margin-size:        5vh;
+		--modal-button-title-size:  calc(var(--modal-title-size) * 0.8);
+		--modal-button-margin-size: 3vh;
+		--modal-dialog-width:       50%;
+	}
+}
+
+/* General modal */
+.modal {
+
+	.modal-dialog {
+		display: flex;
+		margin: auto;
+		width: var(--modal-dialog-width);
+		justify-content: center;
+
+		.modal-content {
+			border: unset !important;
+			width: 100%;
+
+			.modal-body {
+				font-family: 'Spectral', serif !important;
+				padding: var(--modal-margin-size);
+				background-size: cover;
+				background-color: darkslategrey !important;
+				border-color: grey;
+				border-width: var(--modal-border-size);
+				border-style: ridge;
+				width: unset !important;
+			}
+		}
+	}
+}
+
+/* Bootstrap swal alert */
+.swal-modal {
+	font-family: 'Spectral', serif !important;
+	width: var(--modal-width);
+	padding: var(--modal-margin-size);
+	background-size: cover;
+	background-color: darkslategrey !important;
+	border-color: grey;
+	border-width: var(--modal-border-size);
+	border-style: ridge;
+
+	.swal-text, .swal-title, .swal-footer {
+		font-weight: normal !important;
+		font-size: var(--modal-title-size);
+		text-align: center;
+		margin: 0 !important;
+		padding: 0 !important;
+		color: white !important;
+	}
+
+	.swal-button {
+		font-size: var(--modal-button-title-size) !important;
+		padding: calc(var(--modal-button-margin-size) / 2) var(--modal-button-margin-size) !important;
+		border-radius: var(--modal-border-radius) !important;
+
+		&:focus {
+			box-shadow: unset !important;
+		}
+	}
+
+	.swal-button--confirm {
+		background-color: #57bf69 !important;
+		border-color: unset !important;
+		color: darkslategrey !important;
+	}
+
+	.swal-footer {
+		margin-top: calc(var(--modal-margin-size) / 2) !important;
+	}
+}
