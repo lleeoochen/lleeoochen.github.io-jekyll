@@ -4,16 +4,32 @@
 		{
 			"path": ".",
 			"file_exclude_patterns": [
-				"*.lock",
 				".jekyll-metadata",
-				"*.sublime-project"
+				"*.lock",
+				"app.sublime-project",
+				".gitignore",
+				"LICENSE",
+				"Gemfile"
 			],
 			"folder_exclude_patterns": [
-				".sass-cache",
-				".jekyll-cache",
-				"_site",
-				".idea"
-			]
+				".*",
+				"_site"
+			],
+		},
+		{
+			"path": "../web-chess",
+			"file_exclude_patterns": [
+				".jekyll-metadata",
+				"*.lock",
+				"app.sublime-project",
+				".gitignore",
+				"LICENSE",
+				"Gemfile"
+			],
+			"folder_exclude_patterns": [
+				".*",
+				"_site"
+			],
 		}
 	]
 }

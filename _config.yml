@@ -2,11 +2,9 @@
 title:       Personal Website
 description: This website is built to display my side projects, music recordings, and other hobbies.
 
-url:         'www.weitungchen.com' # remote url  (github/website url)
-# url:         'localhost:4000' # local url
-
-baseUrl:     '' # local baseUrl (github repo name)
-# baseUrl:     '' # local baseUrl
+url:       'www.weitungchen.com'
+baseUrl:   ''
+pluginUrl: 'https://weitungchen.com/plugins'
 
 # Build settings
 markdown: kramdown
