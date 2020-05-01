@@ -4,41 +4,44 @@
 	--card-title-size: 4vh;
 	--card-text-size: 2.4vh;
 	--card-width: 50vh;
+	--card-box-shadow: 0.5vh 0.5vh 0.1vh grey;
+	--card-margin-size: 2vh;
 }
 
 .info-card {
 	background-color: #ffffffe0;
 	color: black;
-	box-shadow: 5px 5px 1px grey;
+	box-shadow: var(--card-box-shadow);
 
 	text-align: center;
 	width: var(--card-width);
-	padding: var(--margin-size);
-	border-radius: calc(var(--margin-size) / 3);
-	margin: calc(var(--margin-size) / 2);
+	padding: var(--card-margin-size);
+	border-radius: calc(var(--card-margin-size) / 3);
+	margin: calc(var(--card-margin-size) / 2);
 
 	.title {
 		font-size: var(--card-title-size);
-		margin-bottom: calc(var(--margin-size) / 2);
+		margin-bottom: calc(var(--card-margin-size) / 2);
 	}
 
 	.description {
 		font-size: var(--card-text-size);
-		margin-bottom: var(--margin-size);
+		margin-bottom: var(--card-margin-size);
 	}
 
 	.media {
-		margin-bottom: var(--margin-size);
+		margin-top: 0;
+		margin-bottom: var(--card-margin-size);
 
 		iframe {
 			width: 100%;
-			height: 300px;
-			border-radius: calc(var(--margin-size) / 4);
+			height: 30vh;
+			border-radius: calc(var(--card-margin-size) / 4);
 		}
 
 		img {
 			width: 100%;
-			border-radius: calc(var(--margin-size) / 4);
+			border-radius: calc(var(--card-margin-size) / 4);
 		}
 	}
 
@@ -47,8 +50,10 @@
 			background-image: linear-gradient(#00000000 90%, #2f4f4f 20%);
 			border: unset;
 			color: black;
-			margin: calc(var(--margin-size) / 4);
+			margin: calc(var(--card-margin-size) / 4);
 			font-size: var(--card-text-size);
+			padding: calc(var(--card-margin-size) / 4);
+			border-radius: calc(var(--card-margin-size) / 15);
 		}
 	}
 }

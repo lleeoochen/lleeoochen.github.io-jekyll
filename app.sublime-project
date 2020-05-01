@@ -15,21 +15,6 @@
 				".*",
 				"_site"
 			],
-		},
-		{
-			"path": "../web-chess",
-			"file_exclude_patterns": [
-				".jekyll-metadata",
-				"*.lock",
-				"app.sublime-project",
-				".gitignore",
-				"LICENSE",
-				"Gemfile"
-			],
-			"folder_exclude_patterns": [
-				".*",
-				"_site"
-			],
 		}
 	]
 }

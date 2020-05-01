@@ -54,6 +54,7 @@ body {
 	padding: calc(var(--home-btn-margin-size) * 0.5) var(--home-btn-margin-size) !important;
 	border-radius: calc(var(--home-btn-margin-size) * 0.5);
 	margin-top: var(--home-margin-size) !important;
+	border-width: calc(var(--home-btn-margin-size) * 0.1);
 }
 
 #whale-btn:hover {
