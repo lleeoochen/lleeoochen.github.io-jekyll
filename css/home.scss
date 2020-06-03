@@ -44,6 +44,7 @@ body {
 	display: none;
 	width: var(--home-whale-size);
 	margin-top: var(--home-margin-size);
+	border-radius: 50%;
 }
 
 #whale-btn {
@@ -68,7 +69,7 @@ body {
 }
 
 .idle {
-	animation: updown 0.5s alternate infinite ease-in-out;
+	// animation: updown 0.5s alternate infinite ease-in-out;
 	display: unset !important;
 }
 

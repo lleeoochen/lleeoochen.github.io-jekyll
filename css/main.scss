@@ -1,5 +1,21 @@
 ---
 ---
+
+@media screen and (max-aspect-ratio: 1920/1080) {
+  :root {
+    --layout-bckgd-image-width: unset;
+    --layout-bckgd-image-height: 100vh;
+  }
+}
+
+@media screen and (min-aspect-ratio: 1920/1080) {
+  :root {
+    --layout-bckgd-image-width: 100vw;
+    --layout-bckgd-image-height: unset;
+  }
+}
+
+
 @media screen and (orientation: portrait) {
   :root {
     --layout-margin-top: 3vw;
@@ -28,6 +44,13 @@ body {
     max-width: 100%;
     background-clip: border-box;
     font-size: 0;
+}
+
+.background-image {
+	position: fixed;
+	width: var(--layout-bckgd-image-width);
+	height: var(--layout-bckgd-image-height);
+	z-index: -10;
 }
 
 .container-main {
