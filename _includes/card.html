@@ -1,6 +1,5 @@
 <div class="info-card">
 	<div class="title">{{ data.title }}</div>
-	<div class="description">{{ data.description }}</div>
 	<div class="media">
 		{% if data.image %}
 			<img src="{{ data.image }}"/>
@@ -14,6 +13,7 @@
 			</iframe>
 		{% endif %}
 	</div>
+	<div class="description">{{ data.description }}</div>
 	<div class="bottom">
 		{% if data.product %}
 			<a class="btn" href="{{ data.product }}">Visit</a>

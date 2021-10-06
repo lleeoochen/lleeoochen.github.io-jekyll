@@ -33,27 +33,31 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: white;
-	font-family: 'Neucha', cursive;
-    max-width: 100%;
-    background-clip: border-box;
-    font-size: 0;
+	font-family: 'Quicksand', sans-serif;
+  max-width: 100%;
+  background-clip: border-box;
+  font-size: 0;
+
+  .container-main {
+    padding-bottom: var(--layout-margin-bottom);
+    text-align: center;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.background-image {
-	position: fixed;
-	width: var(--layout-bckgd-image-width);
-	height: var(--layout-bckgd-image-height);
-	z-index: -10;
+// Light color settings
+body {
+  color: black;
+  background: #ffffff;
 }
 
-.container-main {
-	padding-top: var(--layout-margin-top);
-	padding-bottom: var(--layout-margin-bottom);
-	text-align: center;
-}
 
-.row {
-	display: flex;
-	flex-wrap: wrap;
+// Dark color settings
+body.dark {
+  color: white;
+  background: #4A4A4A;
 }
