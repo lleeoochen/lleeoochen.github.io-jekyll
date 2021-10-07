@@ -13,7 +13,6 @@
 	width: var(--card-width);
 	padding: var(--card-margin-size);
 	border-radius: calc(var(--card-margin-size) / 3);
-	margin: 5rem;
 
 	.title {
 		font-size: var(--card-title-size);
@@ -62,8 +61,8 @@ body {
 	}
 	.bottom {
 		.btn {
-			background-image: linear-gradient(#00000000 90%, #2f4f4f 20%);
-			color: black;
+			background-image: linear-gradient(#00000000 95%, #585858 5%);
+			color: #585858;
 		}
 	}
 }
@@ -76,8 +75,8 @@ body.dark {
 	}
 	.bottom {
 		.btn {
-			background-image: linear-gradient(#00000000 90%, #ffffff 20%);
-			color: white;
+			background-image: linear-gradient(#00000000 95%, #8C8C8C 5%);
+			color: #8C8C8C;
 		}
 	}
 }

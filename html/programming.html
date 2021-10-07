@@ -4,9 +4,10 @@ title: Software Projects
 layout: default
 css:
 - "programming.css"
+- "card_container.css"
 ---
 
-<div id="programming" class="row container-main">
+<div id="programming" class="container-main card-container">
 	{% for data in site.data.programming %}
 		{% include card.html data=data %}
 	{% endfor %}

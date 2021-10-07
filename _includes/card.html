@@ -2,7 +2,9 @@
 	<div class="title">{{ data.title }}</div>
 	<div class="media">
 		{% if data.image %}
-			<img src="{{ data.image }}"/>
+			<a href="{{ data.product }}" target="_blank">
+				<img src="{{ data.image }}"/>
+			</a>
 		{% endif %}
 		{% if data.video %}
 			<iframe
@@ -16,10 +18,10 @@
 	<div class="description">{{ data.description }}</div>
 	<div class="bottom">
 		{% if data.product %}
-			<a class="btn" href="{{ data.product }}">Visit</a>
+			<a class="btn hover-effect" href="{{ data.product }}" target="_blank">Visit</a>
 		{% endif %}
 		{% if data.repository %}
-			<a class="btn" href="{{ data.repository }}">GitHub</a>
+			<a class="btn hover-effect" href="{{ data.repository }}" target="_blank">GitHub</a>
 		{% endif %}
 	</div>
 </div>
