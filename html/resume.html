@@ -5,12 +5,22 @@ layout: default
 css:
 - "resume.css"
 - "work_experience.css"
+- "education.css"
+- "skills_summary.css"
 ---
 
 <div id="resume" class="container-main card-container">
-    <div class="section-title">EDUCATION</div>
-    <img class="education-image image-shadow" src="https://www.ucsb.edu/sites/default/files/images/fpo/UCSB-Default-image-FB.jpg" />
-    <div class="education-subtitle">Computer Science, B.S. (Graduated 2020)</div>
+    <div class="top-section">
+        <div class="education-section">
+            <div class="section-title">EDUCATION</div>
+            {% include education.html %}
+        </div>
+        <div class="intro-section">
+            <div class="current-job-title">SOFTWARE ENGINEER</div>
+            <div class="contact-email">weitungchen1998@gmail.com</div>
+            {% include skills_summary.html %}
+        </div>
+    </div>
 
     <div class="section-title">WORK EXPERIENCE</div>
     {% for data in site.data.work_experience %}
