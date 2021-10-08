@@ -1,0 +1,19 @@
+---
+permalink: /resume
+title: Resume
+layout: default
+css:
+- "resume.css"
+- "work_experience.css"
+---
+
+<div id="resume" class="container-main card-container">
+    <div class="section-title">EDUCATION</div>
+    <img class="education-image image-shadow" src="https://www.ucsb.edu/sites/default/files/images/fpo/UCSB-Default-image-FB.jpg" />
+    <div class="education-subtitle">Computer Science, B.S. (Graduated 2020)</div>
+
+    <div class="section-title">WORK EXPERIENCE</div>
+    {% for data in site.data.work_experience %}
+        {% include work_experience.html data=work_experience %}
+    {% endfor %}
+</div>

@@ -1,0 +1,38 @@
+---
+---
+
+.work-experience {
+    display: flex;
+    column-gap: 5rem;
+    font-size: 18px;
+    margin-bottom: 10rem;
+
+    .metadata-side {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        text-align: right;
+
+        .logo {
+            width: 20rem;
+			border-radius: 15px;
+        }
+        .company {
+            font-weight: bold;
+        }
+        .location {
+        }
+        .time {
+
+        }
+    }
+
+    .description-side {
+        .title {
+            font-weight: bold;
+        }
+        .description {
+            white-space: break-spaces;
+        }
+    }
+}

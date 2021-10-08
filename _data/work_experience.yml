@@ -1,0 +1,33 @@
+- title: "Software Engineering Intern"
+  company: "Redfin"
+  location: "Seattle, WA"
+  time: "Jun – Sep 2019"
+  logo: "https://14av231vas55424hmywyupd1-wpengine.netdna-ssl.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
+  description: |
+    Redesigned Redfin’s production machine access system from a labor-intensive, unsecure architecture to a new system that has proven to be more secure, scalable, monitorable, and 90% more efficient.
+
+    <u>Efficient</u>: Replaced the manual access-granting workflow (requiring IT ticketing and code changes from engineering teams) with an automated system that takes access request submissions, Slacks for approval, and grants user access by auto-configuring SSH certificate and proxyjump on user machine in seconds.
+
+    <u>Secure</u>: Leveraged SSH certificate’s principal name matching technique to restrict user access to a subset of machines, which reduced the security risk of exposing all machines at once to unwanted hands.
+
+    <u>Monitorable</u>: Tracked access footprints by assigning each certificate with a serial number mapped to an access request record in database. SSH can also be configured to revoke certificates with serial numbers.
+
+    <u>Planning</u>: Wrote a technical doc that outlines current system’s problems, implementation strategies, and a plan to test and rollout safely. Worked with technical leads to weigh the pros and cons of different strategies for an initial plan, and gave them periodic product updates later on for more feedback.
+
+- title: "Software Engineering Intern"
+  company: "ProDIGIQ"
+  location: "Thousand Oaks, CA"
+  time: "Jun – Sep 2018"
+  logo: "https://pbs.twimg.com/profile_images/1014967511698165760/Htjk8SSm_400x400.jpg"
+  description: |
+    Developed a web tool that allows engineers to visually draw polygon markups on airport maps instead of manually crunching latlng coordinates into the database.
+
+    Led the development of the React Native app in an effort to reduce the cost of developing cross-platform mobile applications.
+
+- title: "Software Engineering Intern"
+  company: "Lacework"
+  location: "Mountain View, CA"
+  time: "Jul – Sep 2017"
+  logo: "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/l0cr2dcb9tua0eytaw0t"
+  description: |
+    Built the first testing framework for Lacework engineers to automatically test and validate backend API calls against the db schema, all through a simple webpage that allows engineers to run tests with customizations on different test scopes, parameters, and testing frequency.

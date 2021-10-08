@@ -1,0 +1,23 @@
+---
+---
+#resume {
+    text-align: left;
+    width: 70vw;
+    margin: 5rem auto;
+
+    .section-title {
+        font-size: 26px;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .education-image {
+        width: 40rem;
+        border-radius: 15px;
+    }
+
+    .education-subtitle {
+        margin-top: 3rem;
+        font-size: 18px;
+    }
+}
