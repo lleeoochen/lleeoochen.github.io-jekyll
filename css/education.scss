@@ -3,10 +3,17 @@
 
 .education {
     .education-image {
-        // width: 70vw;
-        height: 30vw;
-        // max-width: 50rem;
-        max-height: 20rem;
+
+        @media (orientation: portrait) {
+            width: 70vw;
+            max-width: 50rem;
+        }
+        @media (orientation: landscape) {
+            height: 30vw;
+            max-height: 20rem;
+        }
+
+
         border-radius: 15px;
     }
 
