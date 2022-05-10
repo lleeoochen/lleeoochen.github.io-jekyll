@@ -5,16 +5,20 @@
   logo: "https://14av231vas55424hmywyupd1-wpengine.netdna-ssl.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
   description: |
     SLO (Service-Level-Objective) Dashboard
-    <li>Drove the frontend development for Redfin’s first SLO performance dashboard and admin pages, which involved building reusable React components and stores, UI forms for configuring teams’ SLOs and alerts, and a built-in metric validation by querying against different data source APIs.</li>
-    <li>Proposed and implemented a design pattern for managing nested UI forms and React stores, after communicating my idea with the team through a detailed data flow diagram and mentoring a colleague on frontend development basics.</li>
-    <li>Utilized asynchronous data calls to speed up the SLO dashboard page load by 7x, which drastically improved usability.</li>
-
+    <ul>
+      <li>Drove the frontend development for Redfin’s first SLO performance dashboard and admin pages, which involved building reusable React components and stores, UI forms for configuring teams’ SLOs and alerts, and a built-in metric validation by querying against different data source APIs.</li>
+      <li>Proposed and implemented a design pattern for managing nested UI forms and React stores, after communicating my idea with the team through a detailed data flow diagram and mentoring a colleague on frontend development basics.</li>
+      <li>Utilized asynchronous data calls to speed up the SLO dashboard page load by 7x, which drastically improved usability.</li>
+    </ul>
     SLO Ingestion Pipeline
-    <li>Led the investigation into solving a missing data issue with our SLO data ingestion pipeline, which involved independent code readthrough, isolating the root cause, discussing the solutions with the team, and rolling out the final solution that immediately fixed 30 SLOs having the missing data issue.</li>
-    <li>Fixed the missing data issue with a data verification job that runs alongside the SLO data ingestion job, and it periodically verifies, reports, and re-ingests if any missing data is detected in the pipeline.</li>
-
+    <ul>
+      <li>Led the investigation into solving a missing data issue with our SLO data ingestion pipeline, which involved independent code readthrough, isolating the root cause, discussing the solutions with the team, and rolling out the final solution that immediately fixed 30 SLOs having the missing data issue.</li>
+      <li>Fixed the missing data issue with a data verification job that runs alongside the SLO data ingestion job, and it periodically verifies, reports, and re-ingests if any missing data is detected in the pipeline.</li>
+    </ul>
     Elasticsearch (Logging Platform) Disk Quota Program
-    <li>Designed and developed a disk quota program that controls the disk usage allowed for each logging service, grants a better insight into our logging platform disk usage, and auto-manages the logging disk space for us, saving hours of oncall time each week.</li>
+    <ul>
+      <li>Designed and developed a disk quota program that controls the disk usage allowed for each logging service, grants a better insight into our logging platform disk usage, and auto-manages the logging disk space for us, saving hours of oncall time each week.</li>
+    </ul>
 
 - title: "Software Engineering Intern"
   company: "Redfin"
