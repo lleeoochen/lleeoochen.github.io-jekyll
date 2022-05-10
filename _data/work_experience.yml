@@ -1,18 +1,29 @@
+- title: "Software Engineer"
+  company: "Redfin"
+  location: "Seattle, WA"
+  time: "Aug 2020 - Present"
+  logo: "https://14av231vas55424hmywyupd1-wpengine.netdna-ssl.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
+  description: |
+    SLO (Service-Level-Objective) Dashboard
+    <u>Drove the frontend development for Redfin’s first SLO performance dashboard and admin pages, which involved building reusable React components and stores, UI forms for configuring teams’ SLOs and alerts, and a built-in metric validation by querying against different data source APIs.</u>
+    <u>Proposed and implemented a design pattern for managing nested UI forms and React stores, after communicating my idea with the team through a detailed data flow diagram and mentoring a colleague on frontend development basics.</u>
+    <u>Utilized asynchronous data calls to speed up the SLO dashboard page load by 7x, which drastically improved usability.</u>
+
+    SLO Ingestion Pipeline
+    <u>Led the investigation into solving a missing data issue with our SLO data ingestion pipeline, which involved independent code readthrough, isolating the root cause, discussing the solutions with the team, and rolling out the final solution that immediately fixed 30 SLOs having the missing data issue.</u>
+    <u>Fixed the missing data issue with a data verification job that runs alongside the SLO data ingestion job, and it periodically verifies, reports, and re-ingests if any missing data is detected in the pipeline.</u>
+
+    Elasticsearch (Logging Platform) Disk Quota Program
+    <u>Designed and developed a disk quota program that controls the disk usage allowed for each logging service, grants a better insight into our logging platform disk usage, and auto-manages the logging disk space for us, saving hours of oncall time each week.</u>
+
 - title: "Software Engineering Intern"
   company: "Redfin"
   location: "Seattle, WA"
   time: "Jun – Sep 2019"
   logo: "https://14av231vas55424hmywyupd1-wpengine.netdna-ssl.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
   description: |
-    Redesigned Redfin’s production machine access system from a labor-intensive, unsecure architecture to a new system that has proven to be more secure, scalable, monitorable, and 90% more efficient.
-
-    <u>Efficient</u>: Replaced the manual access-granting workflow (requiring IT ticketing and code changes from engineering teams) with an automated system that takes access request submissions, Slacks for approval, and grants user access by auto-configuring SSH certificate and proxyjump on user machine in seconds.
-
-    <u>Secure</u>: Leveraged SSH certificate’s principal name matching technique to restrict user access to a subset of machines, which reduced the security risk of exposing all machines at once to unwanted hands.
-
-    <u>Monitorable</u>: Tracked access footprints by assigning each certificate with a serial number mapped to an access request record in database. SSH can also be configured to revoke certificates with serial numbers.
-
-    <u>Planning</u>: Wrote a technical doc that outlines current system’s problems, implementation strategies, and a plan to test and rollout safely. Worked with technical leads to weigh the pros and cons of different strategies for an initial plan, and gave them periodic product updates later on for more feedback.
+    Built a passwordless SSH-certificate system that enabled Redfin engineers to access machines securely and easily in the test environment, as well as providing different levels of access restriction and access log history.
+    Built an access-approval pipeline that automates the manager approval and access granting process, utilizing scripts to communicate between Slack and the SSH certificate generation.
 
 - title: "Software Engineering Intern"
   company: "ProDIGIQ"
@@ -21,8 +32,6 @@
   logo: "https://pbs.twimg.com/profile_images/1014967511698165760/Htjk8SSm_400x400.jpg"
   description: |
     Developed a web tool that allows engineers to visually draw polygon markups on airport maps instead of manually crunching latlng coordinates into the database.
-
-    Led the development of the React Native app in an effort to reduce the cost of developing cross-platform mobile applications.
 
 - title: "Software Engineering Intern"
   company: "Lacework"

@@ -47,7 +47,7 @@
   video:       "https://www.youtube.com/embed/Ohq8ZeJKKxo"
 
 - title:       "Notebook App"
-  description: "Thi/s is a simple notebook app for Android users."
+  description: "This is a simple notebook app for Android users."
   product:     "/assets/applications/android_notebook_app.apk"
   repository:  "https://github.com/lleeoochen/android-notebook"
   video:       "https://www.youtube.com/embed/UnPiLyx3pAI"
