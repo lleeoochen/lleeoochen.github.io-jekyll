@@ -7,6 +7,15 @@
     </div>
     <div class="description-side">
         <div class="title">{{ data.title }}</div>
-        <div class="description">{{ data.description }}</div>
+        <div class="description">
+            {% assign description_lines = data.description | newline_to_br | split: '<br />' %}
+            {% for description_line in description_lines %}
+                {% if description_line contains "❖" %}
+                    <div class="indent">{{ description_line }}</div>
+                {% else %}
+                    <div>{{ description_line }}</div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </div>

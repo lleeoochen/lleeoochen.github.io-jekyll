@@ -34,6 +34,12 @@
         }
         .description {
             white-space: break-spaces;
+            display: flex;
+            flex-direction: column;
         }
+    }
+
+    .indent {
+        margin-left: 2rem;
     }
 }
