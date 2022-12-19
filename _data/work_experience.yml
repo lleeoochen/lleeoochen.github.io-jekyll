@@ -2,7 +2,7 @@
   company: "Redfin"
   location: "Seattle, WA"
   time: "Aug 2020 - Present"
-  logo: "https://14av231vas55424hmywyupd1-wpengine.netdna-ssl.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
+  logo: "https://www.redfin.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
   description: |
     SLO (Service Level Objective) Dashboard
     ❖ Led the frontend development for Redfin’s first SLO Dashboard from scratch, and since release, it has been used by every team at Redfin to visualize and tune their features’ SLOs.
@@ -21,7 +21,7 @@
   company: "Redfin"
   location: "Seattle, WA"
   time: "Jun – Sep 2019"
-  logo: "https://14av231vas55424hmywyupd1-wpengine.netdna-ssl.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
+  logo: "https://www.redfin.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
   description: |
     ❖ Built a SSH-certificate system that replaced hardcoded password with a secure SSH access to test machines, including various levels of access restriction and access log history.
     ❖ Developed scripts for automating managerial approval and access granting process, through calling Slack APIs and auto-generating SSH certificates.
