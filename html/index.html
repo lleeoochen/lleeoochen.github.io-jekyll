@@ -5,38 +5,16 @@ title: Home
 
 css:
 - "home.css"
+js:
+- "home.js"
 ---
 
 <div class="container-main">
-	<div class="header"> Welcome to My Website! </div>
-	<div id="whale-btn" class="btn" onclick="toggleWhale()"> Dive In </div>
-	<div id="whale-wrap">
-		<img id="whale" src="/assets/images/me.png"/>
+	<img id="profile-pic" class="image-shadow" src="/assets/images/me.jpg"/>
+	<div class="signature">
+		{% include signature.svg %}
 	</div>
 </div>
 
 <script>
-var whale_present = false;
-
-function toggleWhale() {
-	if (whale_present) {
-		$('#whale').addClass('diveout');
-		$('#whale').removeClass('idle');
-		$('#whale-btn').text('Dive In');
-		setTimeout(() => {
-			$('#whale').removeClass('diveout');
-		}, 1000);
-	}
-	else {
-		$('#whale').addClass('divein');
-		$('#whale').removeClass('diveout');
-		$('#whale-btn').text('Dive Out');
-		setTimeout(() => {
-			$('#whale').removeClass('divein');
-			$('#whale').addClass('idle');
-		}, 1000);
-	}
-
-	whale_present = !whale_present;
-}
 </script>
