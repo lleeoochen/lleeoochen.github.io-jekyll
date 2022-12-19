@@ -12,17 +12,16 @@
     }
 }
 
-:root {
-    // --m-foreground-color: #ffffff;
-    // --m-hover-color: #87CEFA;
-}
-
 .menu {
     width: 100%;
 
     .menu-content {
         display: flex;
         padding: 2rem 5rem;
+        @media screen and (orientation: portrait) {
+            flex-direction: column;
+            padding: 1rem 2rem;
+        }
 
         .title {
             font-size: 36px;
@@ -30,6 +29,10 @@
             margin-top: auto;
             margin-bottom: auto;
             text-decoration: none;
+        }
+
+        .tab-and-utility-group {
+            display: flex;
         }
 
         .tab-group {
@@ -41,6 +44,9 @@
             align-items: center;
             flex-flow: wrap;
             margin-left: 5rem;
+            @media screen and (orientation: portrait) {
+                margin-left: 0rem;
+            }
             
             .tab {
                 font-size: 18px;
@@ -60,6 +66,9 @@
             align-items: center;
             display: flex;
             cursor: pointer;
+            @media screen and (orientation: portrait) {
+                margin-left: 0rem;
+            }
 
             svg {
                 width: 4rem;
