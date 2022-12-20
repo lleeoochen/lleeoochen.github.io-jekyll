@@ -38,10 +38,22 @@ body {
   background-clip: border-box;
   font-size: 0;
 
+  @media(orientation: portrait) {
+    margin: 1rem auto;
+  }
+
   .container-main {
-    padding-bottom: var(--layout-margin-bottom);
+    position: relative;
     text-align: center;
     justify-content: center;
+    top: -100px;
+
+    @media screen and (orientation: landscape) {
+      margin-right: 100px;
+    }
+    @media screen and (orientation: portrait) {
+      margin-bottom: 100px;
+    }
 
     .image-shadow {
       filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.7)) drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.3)) drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.2));
@@ -67,7 +79,7 @@ body {
 // Dark color settings
 body.dark {
   color: white;
-  background: #4A4A4A;
+  background: #101010;
 
   .hover-effect {
     &:hover {
@@ -76,4 +88,18 @@ body.dark {
       filter: drop-shadow(2px 4px 6px grey);
     }
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }

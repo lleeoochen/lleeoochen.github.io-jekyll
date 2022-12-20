@@ -1,116 +1,58 @@
 ---
 ---
-@media screen and (orientation: portrait) {
-    :root {
-        // --m-margin-size: 2vw;
-    }
-}
-
-@media screen and (orientation: landscape) {
-    :root {
-        // --m-margin-size: 1vh;
-    }
-}
-
 .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1000;
+  background: linear-gradient(270deg, black, #0000001c);
+  opacity: 0;
+  right: -50px;
+
+  @media screen and (orientation: portrait) {
+    top: unset;
+    bottom: 0;
     width: 100%;
+    height: unset;
+    flex-direction: row;
+    background: linear-gradient(0deg, black, #0000001c);
+  }
 
-    .menu-content {
-        display: flex;
-        padding: 2rem 5rem;
-        @media screen and (orientation: portrait) {
-            flex-direction: column;
-            padding: 1rem 2rem;
-        }
+  .tab-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin: auto 0;
 
-        .title {
-            font-size: 36px;
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-            text-decoration: none;
-        }
-
-        .tab-and-utility-group {
-            display: flex;
-        }
-
-        .tab-group {
-            margin-top: auto;
-            margin-bottom: auto;
-            display: flex;
-            column-gap: 5rem;
-            row-gap: 1rem;
-            align-items: center;
-            flex-flow: wrap;
-            margin-left: 5rem;
-            @media screen and (orientation: portrait) {
-                margin-left: 0rem;
-            }
-            
-            .tab {
-                font-size: 18px;
-                text-decoration: underline;
-
-                &.active {
-                    font-size: 30px;
-                    text-decoration: none;
-                }
-            }
-        }
-
-        .theme-icon {
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-left: 5rem;
-            align-items: center;
-            display: flex;
-            cursor: pointer;
-            @media screen and (orientation: portrait) {
-                margin-left: 0rem;
-            }
-
-            svg {
-                width: 4rem;
-                height: 4rem;
-                filter: drop-shadow;
-            }
-        }
+    @media screen and (orientation: portrait) {
+      flex-direction: row;
+      margin: 0 auto;
     }
-}
+  }
 
-// Light color settings
-body {
-    .menu {
-        background: conic-gradient(from 180deg at 50% 49.73%, #E6C6FF 0deg, #F9F2FF 360deg);
-        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7), 0px 5px 30px rgba(0, 0, 0, 0.3);
+  .menu-icon-wrap {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 231);
+    padding: 15px;margin-top: auto;
 
-        .menu-content {
-            .title, .tab-group .tab {
-                color: #585858;
-            }
-            .theme-icon svg {
-                fill: #585858;
-            }
-        }
+    .menu-icon {
+      width: 20px;
+      height: 20px;
     }
-}
+  }
 
+  .theme-icon {
+    margin: 15px;
+    margin-top: auto;
 
-// Dark color settings
-body.dark {
-    .menu {
-        border-bottom: #4e4e4e solid 1px;
-        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7), 0px 5px 30px rgba(0, 0, 0, 0.3);
-        background: linear-gradient(180deg, #00000059 0%, #0000007a 52.6%, #00000059 100%);
-
-        .menu-content {
-            .title, .tab-group .tab {
-                color: #8C8C8C;
-            }
-            .theme-icon svg {
-                fill: #8C8C8C;
-            }
-        }
+    @media screen and (orientation: portrait) {
+      margin-left: auto;
     }
+  }
 }

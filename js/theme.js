@@ -9,3 +9,11 @@ $('.theme-icon').on('click', () => {
 	$('body').toggleClass('dark');
 	localStorage.setItem('isDarkTheme', $('body').hasClass('dark'));
 });
+
+anime({
+	targets: '.container-main',
+	easing: 'easeInOutQuart',
+	top: 0,
+	opacity: 1,
+	duration: 1000
+});

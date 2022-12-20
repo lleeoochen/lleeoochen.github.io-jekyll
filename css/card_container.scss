@@ -4,6 +4,11 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 10rem;
-    row-gap: 10rem;
-    margin: 5rem 0;
+    row-gap: 3rem;
+    margin: 5rem;
+
+    @media screen and (orientation: portrait) {
+        margin: 0;
+        margin-top: 2rem;
+    }
 }

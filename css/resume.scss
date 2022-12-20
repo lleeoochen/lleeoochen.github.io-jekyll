@@ -1,55 +1,71 @@
 ---
 ---
-#resume {
-    text-align: left;
-    width: 70vw;
-    margin: 5rem auto;
-
-    .section-title {
-        font-size: 26px;
-        margin-top: 5rem;
-        margin-bottom: 3rem;
-    }
-
-    .top-section {
-        display: flex;
-        flex-direction: row;
-        column-gap: 5rem;
-        justify-content: space-between;
-        flex-wrap: wrap-reverse;
-
-        .education-section {
-            margin-bottom: 5rem;
-
-            .section-title {
-                margin-top: unset;
-            }
-        }
-
-        .intro-section {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 5rem;
-
-            @media (orientation: portrait) {
-                align-items: self-start;
-                text-align: left;
-            }
-            @media (orientation: landscape) {
-                align-items: self-end;
-                text-align: right;
-            }
-
-            .current-job-title {
-                color: #B7B6B6;
-                font-size: 36px;
-                margin-bottom: 1rem;
-            }
-            .contact-email {
-                color: #B7B6B6;
-                font-size: 18px;
-                margin-bottom: 2rem;
-            }
-        }
-    }
+#resume-icon-link {
+  background-color: rgb(149, 255, 0);
 }
+
+#resume {
+  text-align: left;
+  width: 70vw;
+  margin: 5rem auto;
+
+  .section-title {
+    font-size: 26px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    
+
+    @media(orientation: portrait) {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+  }
+
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+    .education-section {
+      margin-bottom: 2rem;
+
+      @media(orientation: portrait) {
+        align-items: self-start;
+        text-align: left;
+      }
+
+      .section-title {
+        margin-top: unset;
+      }
+    }
+
+    .intro-section {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      @media(orientation: portrait) {
+        align-items: self-start;
+        text-align: left;
+      }
+
+      @media(orientation: landscape) {
+        align-items: self-end;
+        text-align: right;
+      }
+
+      .current-job-title {
+        color: #B7B6B6;
+        font-size: 36px;
+        margin-bottom: 1rem;
+      }
+
+      .contact-email {
+        color: #B7B6B6;
+        font-size: 18px;
+        margin-bottom: 2rem;
+      }
+    }
+  }}

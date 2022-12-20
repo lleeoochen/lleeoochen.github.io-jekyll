@@ -5,36 +5,33 @@
     --home-profile-pic-size: 50vw;
 		--home-signature-width: 80vw;
 		--home-flex-direction: column;
-		--home-profile-pic-margin-right: 0;
   }
 }
 @media screen and (orientation: landscape) {
   :root {
-    --home-profile-pic-size: 50vh;
-		--home-signature-width: 80vh;
+    --home-profile-pic-size: 50%;
+		--home-signature-width: 80%;
 		--home-flex-direction: row;
-		--home-profile-pic-margin-right: 5vw;
-		}
+	}
 }
 
-:root {
-  --background-color: #2f4f4fb3;
+#home-icon-link {
+	background-color: rgb(149, 255, 0);
 }
 
 .container-main {
 	display: flex;
 	flex-direction: var(--home-flex-direction);
 	align-items: center;
-	margin: 50px;
+	margin: 0 50px;
+	height: 100vh;
 
 	#profile-pic {
 		position: relative;
 		object-fit: cover;
 		width: var(--home-profile-pic-size);
 		height: var(--home-profile-pic-size);
-		margin-top: var(--home-margin-size);
 		border-radius: 10px;
-		margin-right: var(--home-profile-pic-margin-right);
 		left: -100px;
 		opacity: 0;
 	}
@@ -45,7 +42,6 @@
 	}
 }
 
-
 // Light color settings
 body {
 	.container-main {
@@ -54,7 +50,6 @@ body {
 		}
 	}
 }
-
 
 // Dark color settings
 body.dark {

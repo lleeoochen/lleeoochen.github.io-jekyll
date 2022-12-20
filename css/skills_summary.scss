@@ -7,8 +7,12 @@
     
     width: 70vw;
     height: 30vw;
-    max-width: 40rem;
-    max-height: 15rem;
+    max-width: 30rem;
+    max-height: 12rem;
+
+    @media screen and (orientation: portrait) {
+        padding: 1rem 0.5rem;
+    }
 }
 
 

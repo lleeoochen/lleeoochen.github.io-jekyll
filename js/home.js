@@ -12,7 +12,7 @@ anime.timeline({
   duration: 5000,
   loop: false,
 })
-.add({ targets: '.signature path', fill: '#000000' }, 0)
+.add({ targets: '.signature path', fill: '#ffffff' }, 0)
 
 anime({
   targets: '#profile-pic',

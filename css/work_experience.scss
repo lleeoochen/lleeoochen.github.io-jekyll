@@ -5,26 +5,38 @@
     display: flex;
     column-gap: 5rem;
     font-size: 18px;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
+
+    @media(orientation: portrait) {
+        flex-direction: column;
+    }
 
     .metadata-side {
         display: flex;
         flex-direction: column;
-        row-gap: 2rem;
+        gap: 1rem;
         text-align: right;
+
+        @media(orientation: portrait) {
+            flex-direction: row;
+            text-align: left;
+        }
 
         .logo {
             width: 20vw;
-            max-width: 20rem;
+            height: fit-content;
+            max-width: 10rem;
 			border-radius: 15px;
+            margin-bottom: 1rem;
         }
-        .company {
-            font-weight: bold;
-        }
-        .location {
-        }
-        .time {
 
+        .metadata-info {
+            display: flex;
+            flex-direction: column;
+
+            .company {
+                font-weight: bold;
+            }
         }
     }
 

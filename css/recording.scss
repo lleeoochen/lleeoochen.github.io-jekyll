@@ -4,12 +4,16 @@
 	--margin-size: 3vh;
 }
 
+.container-main {
+	top: -100px;
+}
+
+#music-icon-link {
+  background-color: rgb(149, 255, 0);
+}
+
 #recording {
 	margin-left: var(--margin-size) !important;
 	margin-right: var(--margin-size) !important;
 	justify-content: center;
-}
-
-.menu-link-music {
-  background-color: #00000075;
 }
