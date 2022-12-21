@@ -16,15 +16,16 @@
 }
 
 #home-icon-link {
-	background-color: rgb(149, 255, 0);
+	background-color: #1f2393;
 }
 
 .container-main {
 	display: flex;
 	flex-direction: var(--home-flex-direction);
 	align-items: center;
-	margin: 0 50px;
+	margin: 0 50px !important;
 	height: 100vh;
+	gap: 1rem;
 
 	#profile-pic {
 		position: relative;
@@ -32,8 +33,18 @@
 		width: var(--home-profile-pic-size);
 		height: var(--home-profile-pic-size);
 		border-radius: 10px;
+
+		// for animation
 		left: -100px;
-		opacity: 0;
+		opacity: 0;	
+		max-width: 0%;
+
+		@media screen and (orientation: portrait) {
+			left: 0;
+			top: -100px;
+			max-width: unset;
+			max-height: 0%;
+		}
 	}
 
 	svg {
