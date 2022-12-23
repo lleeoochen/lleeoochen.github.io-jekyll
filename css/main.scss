@@ -43,12 +43,32 @@ body {
     text-align: center;
     justify-content: center;
     top: -100px;
+    position: absolute;
 
     @media screen and (orientation: landscape) {
+      margin: auto 5rem;
+      height: 80vh;
+      top: 0;
+      bottom: 0;
       margin-right: 100px;
     }
     @media screen and (orientation: portrait) {
-      margin-bottom: 100px;
+      margin: 5rem auto;
+      height: 75vh;
+      width: 80vw;
+      left: 0;
+      right: 0;
+      margin-bottom: 150px;
+    }
+
+    @media screen and (orientation: landscape) {
+      scroll-snap-type: y mandatory;
+      overflow: auto;
+      padding-right: 15px; // padding right for scroll bar
+    } 
+    @media screen and (orientation: portrait) {
+      // scroll-snap-type: x mandatory;
+      // overflow: auto;
     }
 
     .image-shadow {
