@@ -4,6 +4,16 @@
 	background-color: #c93f63;
 }
 
+.container-main {
+  width: 60% !important;
+}
+
+@media(orientation: portrait) {
+  .container-main {
+    width: 80vw !important;
+  }
+}
+
 #resume {
   text-align: left;
 
@@ -11,7 +21,6 @@
     font-size: 26px;
     margin-top: 5rem;
     margin-bottom: 3rem;
-    
 
     @media(orientation: portrait) {
         margin-top: 2rem;
