@@ -31,11 +31,6 @@ body .container-main-outer {
 		width: 100%;
 		gap: 1rem;
 		margin: unset;
-		
-		@media screen and (orientation: portrait) {
-			padding-bottom: 0;
-			margin: 0 auto;
-		}
 
 		#profile-pic {
 			position: relative;
@@ -45,13 +40,6 @@ body .container-main-outer {
 			// for animation
 			left: -100px;
 			opacity: 0;
-
-			@media screen and (orientation: portrait) {
-				left: 0;
-				top: -100px;
-				max-width: unset;
-				max-height: 0%;
-			}
 		}
 
 		.signature {
@@ -61,6 +49,21 @@ body .container-main-outer {
 				height: 100%;
 				width: var(--home-signature-width);
 			}
+		}
+	}
+}
+		
+@media screen and (orientation: portrait) {
+	body .container-main-outer .container-main {
+		padding-bottom: 0;
+		margin: 0 auto;
+
+		#profile-pic {
+			left: 0;
+			top: -100px;
+			max-width: unset;
+			max-height: 0%;
+			width: 100%;
 		}
 	}
 }
