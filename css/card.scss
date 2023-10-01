@@ -32,7 +32,7 @@
 	text-align: left;
 	padding: var(--card-margin-size);
 	border-radius: calc(var(--card-margin-size) / 3);
-	scroll-snap-align: start;
+	// scroll-snap-align: start;
 
 	.image-text {
 		width: 30%;
@@ -105,7 +105,7 @@
 		text-align: left;
 		padding: var(--card-margin-size);
 		border-radius: calc(var(--card-margin-size) / 3);
-		scroll-snap-align: start;
+		// scroll-snap-align: start;
 
 		.image-text {
 			width: 100%;

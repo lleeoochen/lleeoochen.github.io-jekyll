@@ -3,5 +3,5 @@ anime({
   easing: 'easeInOutExpo',
   right: 0,
   opacity: 1,
-  duration: 1000
+  duration: 0
 });
