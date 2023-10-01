@@ -16,7 +16,7 @@
 }
 
 #home-icon-link {
-	background-color: #1f2393;
+	background-color: #c93f63;
 }
 
 
@@ -27,6 +27,7 @@ body .container-main-outer {
 		display: flex;
 		flex-direction: var(--home-flex-direction);
 		align-items: center;
+		justify-content: center;
 		height: 100vh;
 		width: 100%;
 		gap: 1rem;
@@ -36,6 +37,8 @@ body .container-main-outer {
 			position: relative;
 			object-fit: cover;
 			height: var(--home-profile-pic-size);
+			margin-left: 10rem;
+			border-radius: 50%;
 
 			// for animation
 			left: -100px;
@@ -43,7 +46,7 @@ body .container-main-outer {
 		}
 
 		.signature {
-			text-align: center;
+			text-align: left;
 
 			svg {
 				height: 100%;
@@ -64,6 +67,7 @@ body .container-main-outer {
 			max-width: unset;
 			max-height: 0%;
 			width: 100%;
+			margin-left: 0rem;
 		}
 	}
 }

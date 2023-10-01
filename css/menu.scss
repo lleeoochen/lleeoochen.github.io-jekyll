@@ -8,9 +8,10 @@
   flex-direction: column;
   justify-content: center;
   z-index: 1000;
-  background: linear-gradient(270deg, black, #0000001c);
+  background: linear-gradient(270deg, #f0bfca, #ffffff00);
   opacity: 0;
   right: -50px;
+  position: fixed;
 
   @media screen and (orientation: portrait) {
     top: unset;
@@ -18,7 +19,7 @@
     width: 100%;
     height: unset;
     flex-direction: row;
-    background: linear-gradient(0deg, black, #0000001c);
+    background: linear-gradient(0deg, #f0bfca, #ffffff00);
   }
 
   .tab-group {
@@ -36,8 +37,9 @@
   }
 
   .menu-icon-wrap {
+    line-height: 1;
     border-radius: 50%;
-    background-color: #474747ab;
+    background-color: #d397a7;
     padding: 15px;margin-top: auto;
 
     .menu-icon {
