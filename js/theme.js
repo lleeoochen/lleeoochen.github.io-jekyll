@@ -1,6 +1,6 @@
 $(function() {
 	const isDarkTheme = localStorage.getItem('isDarkTheme') !== 'false';
-	$('body').toggleClass('dark', isDarkTheme);
+	// $('body').toggleClass('dark', isDarkTheme);
 	$('body').toggleClass('hidden', false);
 });
 
