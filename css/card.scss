@@ -34,21 +34,26 @@
 	border-radius: calc(var(--card-margin-size) / 3);
 	scroll-snap-align: start;
 
-	.title {
-		font-size: var(--card-title-size);
-		margin-bottom: 30px;
+	.image-text {
+		width: 30%;
 
-		@media screen and (orientation: portrait) {
-			margin-bottom: 5px;
+		.title {
+			font-size: var(--card-title-size);
+			margin-bottom: 30px;
+
+			@media screen and (orientation: portrait) {
+				margin-bottom: 5px;
+			}
+		}
+
+		.description {
+			font-size: var(--card-text-size);
+			margin-bottom: var(--card-margin-size);
 		}
 	}
 
-	.description {
-		font-size: var(--card-text-size);
-		margin-bottom: var(--card-margin-size);
-	}
-
 	.media {
+		width: 70%;
 		margin-top: 0;
 		margin-bottom: 30px;
 
@@ -64,8 +69,9 @@
 		}
 
 		img {
-			height: 75vh;
+			height: auto;
 			width: fit-content;
+			max-width: 100%;
 			border-radius:15px;
 
 			@media screen and (orientation: portrait) {
@@ -86,6 +92,28 @@
 	}
 }
 
+@media screen and (orientation: portrait) {
+	.info-card {
+		display: flex;
+		flex-direction: var(--direction);
+		justify-content: space-between;
+		gap: 1rem;
+		width: 100%;
+
+		text-align: left;
+		padding: var(--card-margin-size);
+		border-radius: calc(var(--card-margin-size) / 3);
+		scroll-snap-align: start;
+
+		.image-text {
+			width: 100%;
+		}
+
+		.media {
+			width: 100%;
+		}
+	}
+}
 
 // Light color settings
 body {

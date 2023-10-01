@@ -9,7 +9,7 @@
 }
 @media screen and (orientation: landscape) {
   :root {
-    --home-profile-pic-size: 50%;
+    --home-profile-pic-size: 100vh;
 		--home-signature-width: 80%;
 		--home-flex-direction: row;
 	}
@@ -19,37 +19,49 @@
 	background-color: #1f2393;
 }
 
-.container-main {
-	display: flex;
-	flex-direction: var(--home-flex-direction);
-	align-items: center;
-	// margin: 0 50px !important;
-	height: 100vh;
-	gap: 1rem;
 
-	#profile-pic {
-		position: relative;
-		object-fit: cover;
-		width: var(--home-profile-pic-size);
-		height: var(--home-profile-pic-size);
-		border-radius: 10px;
+body .container-main-outer {
+	overflow: hidden;
 
-		// for animation
-		left: -100px;
-		opacity: 0;	
-		max-width: 0%;
-
+	.container-main {
+		display: flex;
+		flex-direction: var(--home-flex-direction);
+		align-items: center;
+		height: 100vh;
+		width: 100%;
+		gap: 1rem;
+		margin: unset;
+		
 		@media screen and (orientation: portrait) {
-			left: 0;
-			top: -100px;
-			max-width: unset;
-			max-height: 0%;
+			padding-bottom: 0;
+			margin: 0 auto;
 		}
-	}
 
-	svg {
-		height: 100%;
-		width: var(--home-signature-width);
+		#profile-pic {
+			position: relative;
+			object-fit: cover;
+			height: var(--home-profile-pic-size);
+
+			// for animation
+			left: -100px;
+			opacity: 0;
+
+			@media screen and (orientation: portrait) {
+				left: 0;
+				top: -100px;
+				max-width: unset;
+				max-height: 0%;
+			}
+		}
+
+		.signature {
+			text-align: center;
+
+			svg {
+				height: 100%;
+				width: var(--home-signature-width);
+			}
+		}
 	}
 }
 

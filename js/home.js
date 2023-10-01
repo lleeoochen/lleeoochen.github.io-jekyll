@@ -39,7 +39,7 @@ anime (
     opacity: 1,
     duration: 3000,
     delay: 1500,
-    maxWidth: isPortraitMode ? "100%" : "30%",
+    maxWidth: isPortraitMode ? "100%" : "50%",
     maxHeight: isPortraitMode ? "30%" : "100%",
   }
 );;
