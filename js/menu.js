@@ -1,7 +1,7 @@
 anime({
   targets: '.menu',
   easing: 'easeInOutExpo',
-  right: 0,
+  left: 0,
   opacity: 1,
-  duration: 0
+  duration: 1000
 });

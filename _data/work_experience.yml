@@ -38,6 +38,6 @@
   company: "Lacework"
   location: "Mountain View, CA"
   time: "Jul – Sep 2017"
-  logo: "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/l0cr2dcb9tua0eytaw0t"
+  logo: "https://content.lacework.com/wp-content/uploads/2022/01/Lacework_Shield_RGB.svg"
   description: |
     ❖ Built the first testing framework for Lacework engineers to automatically test and validate backend API calls against the db schema, all through a simple webpage that allows engineers to run tests with customizations on different test scopes, parameters, and testing frequency.
