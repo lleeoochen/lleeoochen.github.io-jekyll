@@ -26,7 +26,8 @@ anime.timeline (
 ).add (
   {
     targets: ".signature path",
-    fill: "#ffffff"
+    fill: "#d397a7",
+    stroke: "#d397a7"
   },
   0
 );
