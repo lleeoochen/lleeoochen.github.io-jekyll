@@ -4,10 +4,6 @@
 	background-color: #c93f63;
 }
 
-.container-main {
-  width: 50% !important;
-}
-
 #resume {
   text-align: left;
 
@@ -83,10 +79,6 @@
 }
 
 @media(orientation: portrait) {
-  .container-main {
-    width: 80vw !important;
-  }
-
   #resume {
     .top-section {
       .intro-section {
