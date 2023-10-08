@@ -2,56 +2,79 @@
 ---
 
 .work-experience {
-    display: flex;
-    column-gap: 5rem;
     font-size: 18px;
-    margin-bottom: 2rem;
 
-    @media(orientation: portrait) {
-        flex-direction: column;
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 1rem 0;
     }
-
-    .metadata-side {
+    .content {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        text-align: right;
+        column-gap: 2rem;
+        // margin-bottom: 2rem;
 
         @media(orientation: portrait) {
-            flex-direction: row;
-            text-align: left;
+            flex-direction: column;
         }
 
-        .logo {
-            width: 20vw;
-            height: fit-content;
-            max-width: 10rem;
-			border-radius: 15px;
-            margin-bottom: 1rem;
-        }
-
-        .metadata-info {
+        .metadata-side {
             display: flex;
             flex-direction: column;
+            gap: 1rem;
+            text-align: right;
 
-            .company {
-                font-weight: bold;
+            @media(orientation: portrait) {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .logo {
+                width: 20vw;
+                height: fit-content;
+                max-width: 10rem;
+                border-radius: 15px;
+                margin-bottom: 1rem;
+            }
+
+            .metadata-info {
+                display: flex;
+                flex-direction: column;
+
+                .company {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .description-side {
+            .description {
+                white-space: break-spaces;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .indent {
+            margin-left: 0rem;
+
+            @media(orientation: portrait) {
+                margin-left: 0rem;
             }
         }
     }
+}
 
-    .description-side {
-        .title {
-            font-weight: bold;
-        }
-        .description {
-            white-space: break-spaces;
-            display: flex;
-            flex-direction: column;
-        }
+.divider {
+    height: 1px;
+    width: 90%;
+    margin: 2rem auto;
+
+    @media(orientation: portrait) {
+        background-color: #d397a7;
     }
 
-    .indent {
-        margin-left: 1rem;
+    &:last-child {
+        display: none;
     }
 }

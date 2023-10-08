@@ -5,13 +5,7 @@
 }
 
 .container-main {
-  width: 60% !important;
-}
-
-@media(orientation: portrait) {
-  .container-main {
-    width: 80vw !important;
-  }
+  width: 50% !important;
 }
 
 #resume {
@@ -19,7 +13,7 @@
 
   .section-title {
     font-size: 26px;
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
 
     @media(orientation: portrait) {
@@ -30,49 +24,82 @@
 
   .top-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     column-gap: 1rem;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
-
-    .education-section {
-      margin-bottom: 2rem;
-
-      @media(orientation: portrait) {
-        align-items: self-start;
-        text-align: left;
-      }
-
-      .section-title {
-        margin-top: unset;
-      }
-    }
 
     .intro-section {
       display: flex;
-      flex-direction: column;
-      margin-bottom: 2rem;
+      flex-direction: row;
+      // margin-bottom: 2rem;
+      justify-content: space-between;
 
-      @media(orientation: portrait) {
-        align-items: self-start;
-        text-align: left;
+      .left {
+        flex: 1;
+
+        &.name {
+          font-size: 50px;
+        }
       }
 
-      @media(orientation: landscape) {
-        align-items: self-end;
-        text-align: right;
+      .right {
+        flex: 1;
+
+        @media(orientation: portrait) {
+          align-items: self-start;
+          text-align: left;
+        }
+      
+        @media(orientation: landscape) {
+          align-items: self-end;
+          text-align: right;
+        }
       }
 
       .current-job-title {
-        color: #B7B6B6;
+        color: #828282;
         font-size: 36px;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
       }
 
       .contact-email {
-        color: #B7B6B6;
+        color: #828282;
         font-size: 18px;
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
       }
     }
-  }}
+
+    .intro-images {
+      display: none;
+      // display: flex;
+      // gap: 1rem;
+
+      // & > * {
+      //   width: 50%;
+      //   height: auto;
+      // }
+    }
+  }
+}
+
+@media(orientation: portrait) {
+  .container-main {
+    width: 80vw !important;
+  }
+
+  #resume {
+    .top-section {
+      .intro-section {
+        flex-direction: column;
+
+        .left.name {
+          font-size: 40px;
+        }
+
+        .current-job-title {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
