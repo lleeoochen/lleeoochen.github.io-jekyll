@@ -49,14 +49,14 @@
 
         .description-side {
             .description {
-                white-space: break-spaces;
                 display: flex;
                 flex-direction: column;
+                gap: 1rem;
             }
         }
 
         .indent {
-            margin-left: 0rem;
+            margin-left: 1rem;
 
             @media (orientation: portrait) {
                 margin-left: 0rem;
