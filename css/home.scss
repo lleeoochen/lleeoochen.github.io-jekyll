@@ -1,15 +1,16 @@
 ---
 ---
+
 @media screen and (orientation: portrait) {
-  :root {
-    --home-profile-pic-size: 50vw;
+	:root {
+		--home-profile-pic-size: 50vw;
 		--home-signature-width: 80vw;
 		--home-flex-direction: column;
-  }
+	}
 }
 @media screen and (orientation: landscape) {
-  :root {
-    --home-profile-pic-size: 100vh;
+	:root {
+		--home-profile-pic-size: 100vh;
 		--home-signature-width: 80%;
 		--home-flex-direction: row;
 	}
@@ -18,7 +19,6 @@
 #home-icon-link {
 	background-color: #c93f63;
 }
-
 
 body .container-main-outer {
 	overflow: hidden;
@@ -56,7 +56,7 @@ body .container-main-outer {
 		}
 	}
 }
-		
+
 @media screen and (orientation: portrait) {
 	body .container-main-outer .container-main {
 		padding-bottom: 0;

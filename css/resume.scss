@@ -1,7 +1,8 @@
 ---
 ---
+
 #resume-icon-link {
-	background-color: #c93f63;
+  background-color: #c93f63;
 }
 
 #resume {
@@ -12,9 +13,9 @@
     margin-top: 1rem;
     margin-bottom: 3rem;
 
-    @media(orientation: portrait) {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+    @media (orientation: portrait) {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -41,12 +42,12 @@
       .right {
         flex: 1;
 
-        @media(orientation: portrait) {
+        @media (orientation: portrait) {
           align-items: self-start;
           text-align: left;
         }
-      
-        @media(orientation: landscape) {
+
+        @media (orientation: landscape) {
           align-items: self-end;
           text-align: right;
         }
@@ -78,7 +79,7 @@
   }
 }
 
-@media(orientation: portrait) {
+@media (orientation: portrait) {
   #resume {
     .top-section {
       .intro-section {

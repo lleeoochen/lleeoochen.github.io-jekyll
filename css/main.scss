@@ -15,7 +15,6 @@
   }
 }
 
-
 @media screen and (orientation: portrait) {
   :root {
     --layout-margin-top: 3vw;
@@ -31,12 +30,12 @@
 }
 
 body {
-	font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
-  
+
   #flowery-background {
     position: fixed;
     background-image: url("/assets/images/sophie/flowery_background.svg");
@@ -59,7 +58,8 @@ body {
       margin: 5rem auto;
 
       .image-shadow {
-        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.7)) drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.3)) drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.7)) drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.3))
+          drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.2));
       }
     }
   }
@@ -75,7 +75,7 @@ body {
       left: 0;
       right: 0;
       margin: 1rem auto;
-      margin-bottom: 10rem; // for phone bottom showing
+      margin-bottom: 10rem; // for phone bottom render
     }
   }
 }
@@ -93,7 +93,6 @@ body {
     }
   }
 }
-
 
 // Dark color settings
 body.dark {

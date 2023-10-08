@@ -4,7 +4,7 @@
 .skills-summary {
     padding: 2rem 2rem;
     border-radius: 15px;
-    
+
     // width: 70vw;
     // height: 30vw;
     // max-width: 30rem;
@@ -15,13 +15,12 @@
     }
 }
 
-
 // Light color settings
 body {
     .skills-summary {
         background-color: #ffffff;
 
-        path:nth-child(-n+3) {
+        path:nth-child(-n + 3) {
             fill: #585858;
         }
     }
@@ -30,9 +29,9 @@ body {
 // Dark color settings
 body.dark {
     .skills-summary {
-        background-color: #2F2F2F;
+        background-color: #2f2f2f;
 
-        path:nth-child(-n+3) {
+        path:nth-child(-n + 3) {
             fill: white;
         }
     }

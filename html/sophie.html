@@ -5,117 +5,116 @@ layout: clean
 ---
 
 <style>
-    .container-main {
-        position: relative !important;
-        height: 100% !important;
-        font-size: 20px;
-        color: black;
-        padding: 5rem;
+  .container-main {
+    text-align: center;
+    position: relative !important;
+    height: 100% !important;
+    font-size: 20px;
+    color: black;
+    padding: 5rem;
+
+    @media screen and (orientation: portrait) {
+      margin: 0 auto !important;
+      padding: 5rem 0 !important;
+    }
+  }
+
+  .poem-container {
+    max-width: 70%;
+    max-width: 700px;
+    margin: 2rem auto auto;
+    padding: 2rem;
+    padding: 2rem;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media screen and (orientation: portrait) {
+      max-width: 80%;
+    }
+  }
+
+  .divider {
+    height: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .gallary {
+    max-width: 70%;
+    margin: 2rem;
+    display: inline-block;
+
+    @media screen and (orientation: portrait) {
+      margin: 0;
+      max-width: 80%;
+    }
+
+    .photo {
+      width: 200px;
+      margin: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      @media screen and (orientation: portrait) {
+        width: 100%;
+        margin: 15px 0 0;
+      }
+
+      &.horizontal {
+        width: 400px;
 
         @media screen and (orientation: portrait) {
-            margin: 0 auto !important;
-            padding: 5rem 0;
+          width: 100%;
+          margin: 15px 0 0;
         }
+      }
     }
-
-    .poem-container {
-        max-width: 70%;
-        max-width: 700px;
-        margin: auto;
-        margin-top: 2rem;
-        padding: 2rem;
-        border-radius: 15px;
-
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-        @media screen and (orientation: portrait) {
-            max-width: 80%;
-        }
-    }
-
-    .divider {
-        height: 15px;
-        margin-top: 15px;
-        margin-bottom: 25px;
-    }
-
-    .gallary {
-        max-width: 70%;
-        margin: 2rem;
-        display: inline-block;
-
-        @media screen and (orientation: portrait) {
-            margin: 0;
-            max-width: 80%;
-        }
-
-        .photo {
-            width: 200px;
-            margin: 15px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-            @media screen and (orientation: portrait) {
-                width: 100%;
-                margin: 0;
-                margin-top: 15px;
-            }
-
-            &.horizontal {
-                width: 400px;
-
-                @media screen and (orientation: portrait) {
-                    width: 100%;
-                    margin: 0;
-                    margin-top: 15px;
-                }
-            }
-        }
-    }
+  }
 </style>
 
 <div id="flowery-background"></div>
 
 <div class="container-main">
-    <h1>Happy Girlfriend's Day, Babyyyyy!!!</h1>
+  <h1>
+    Happy Girlfriend's Day, Babyyyyy!!!
+  </h1>
+  <p>
+    Can you believe that we've been together for 156 days!
+  </p>
+  <div class="poem-container">
     <p>
-        Can you believe that we've been together for 156 days!
+      Every day with you feels like a first day to me, but also every day with you feels like I want to be with
+      you as
+                  long as it can be~
     </p>
-    <div class="poem-container">
-        <p>
-            Every day with you feels like a first day to me, but also every day with you feels like I want to be with
-            you as
-            long as it can be~
-        </p>
-        <img class="divider" src="/assets/images/sophie/divider.svg" />
-        <p>
-            I'm not sure which of the feeling makes our relationship sublime, let it be warmth, trust, or silly, but I
-            know
-            I love you for all of them combined~
-        </p>
-        <img class="divider" src="/assets/images/sophie/divider.svg" />
-        <p>
-            Of course, not every day together is rainbow and roses, but as long as we're together, I'll give you
-            mountains
-            of encouragements, hugs, and kisses~
-        </p>
-        <img class="divider" src="/assets/images/sophie/divider.svg" />
-        <p>
-            If only I can see you and hug you at this very minute, because I want to scream "I'm so proud of you" "I
-            appreciate you so
-            much" and I LOVE YOU BABY!!!
-        </p>
-    </div>
-    <div class="gallary">
-        <img class="photo" src="/assets/images/sophie/cafe_first_date.jpg" />
-        <img class="photo" src="/assets/images/sophie/eating_la.jpg" />
-        <img class="photo" src="/assets/images/sophie/little_chef.jpg" />
-        <img class="photo" src="/assets/images/sophie/little_chef_2.jpg" />
-        <img class="photo" src="/assets/images/sophie/silly_us.jpg" />
-        <img class="photo" src="/assets/images/sophie/your_cute_smile.jpg" />
-        <img class="photo horizontal" src="/assets/images/sophie/stardew_fishing.jpg" />
-        <img class="photo horizontal" src="/assets/images/sophie/art.jpg" />
-        <img class="photo horizontal" src="/assets/images/sophie/move_date.jpg" />
-    </div>
+    <img class="divider" src="/assets/images/sophie/divider.svg" />
+    <p>
+      I'm not sure which of the feeling makes our relationship sublime, let it be warmth, trust, or silly, but I
+      know
+                  I love you for all of them combined~
+    </p>
+    <img class="divider" src="/assets/images/sophie/divider.svg" />
+    <p>
+      Of course, not every day together is rainbow and roses, but as long as we're together, I'll give you
+      mountains
+                  of encouragements, hugs, and kisses~
+    </p>
+    <img class="divider" src="/assets/images/sophie/divider.svg" />
+    <p>
+      If only I can see you and hug you at this very minute, because I want to scream "I'm so proud of you" "I
+      appreciate you so
+                  much" and I LOVE YOU BABY!!!
+    </p>
+  </div>
+  <div class="gallary">
+    <img class="photo" src="/assets/images/sophie/cafe_first_date.jpg" />
+    <img class="photo" src="/assets/images/sophie/eating_la.jpg" />
+    <img class="photo" src="/assets/images/sophie/little_chef.jpg" />
+    <img class="photo" src="/assets/images/sophie/little_chef_2.jpg" />
+    <img class="photo" src="/assets/images/sophie/silly_us.jpg" />
+    <img class="photo" src="/assets/images/sophie/your_cute_smile.jpg" />
+    <img class="photo horizontal" src="/assets/images/sophie/stardew_fishing.jpg" />
+    <img class="photo horizontal" src="/assets/images/sophie/art.jpg" />
+    <img class="photo horizontal" src="/assets/images/sophie/move_date.jpg" />
+  </div>
 </div>

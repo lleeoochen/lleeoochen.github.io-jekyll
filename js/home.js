@@ -1,6 +1,6 @@
 const isPortraitMode = window.innerHeight > window.innerWidth;
 
-anime (
+anime(
   {
     targets: ".signature path",
     strokeDashoffset: [
@@ -9,21 +9,20 @@ anime (
     ],
     easing: "easeInOutSine",
     duration: 1000,
-    delay: function (el, i)
-    {
+    delay: function (el, i) {
       return i * 150;
     },
     loop: false
   }
 );
 
-anime.timeline (
+anime.timeline(
   {
     easing: "easeInOutSine",
     duration: 3000,
     loop: false
   }
-).add (
+).add(
   {
     targets: ".signature path",
     fill: "#d397a7",
@@ -32,7 +31,7 @@ anime.timeline (
   0
 );
 
-anime (
+anime(
   {
     targets: "#profile-pic",
     translateX: isPortraitMode ? 0 : 100,
