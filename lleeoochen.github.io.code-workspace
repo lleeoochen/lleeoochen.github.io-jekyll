@@ -1,24 +1,27 @@
 {
-  "settings": {
-    "liquid.engine": "jekyll",
-    "liquid.format.preserveLine": 1,
-    "files.associations": {
-      "*.scss": "scss",
-      "*.html": "liquid"
-    },
-    "html.validate.styles": false,
-    "css.format.enable": false,
-    "scss.validate": false,
-    "[scss]": {
-      "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
-    },
-    "[liquid]": {},
-    "html.format.enable": false,
-    "liquid.format.endNewLine": true
-  },
-  "folders": [
-    {
-      "path": "."
-    }
-  ]
+	"settings": {
+		"liquid.engine": "jekyll",
+		"liquid.format.preserveLine": 1,
+		"files.associations": {
+			"*.scss": "scss",
+			"*.html": "liquid"
+		},
+		"html.validate.styles": false,
+		"css.format.enable": false,
+		"scss.validate": false,
+		"[scss]": {
+			"editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+		},
+		"[liquid]": {},
+		"html.format.enable": false,
+		"liquid.format.endNewLine": true,
+		"terminal-in-status-bar.statusBarLabel": true,
+		"editor.tabSize": 2,
+		"liquid.format.enable": true
+	},
+	"folders": [
+		{
+			"path": "."
+		}
+	]
 }

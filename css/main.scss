@@ -2,124 +2,124 @@
 ---
 
 @media screen and (max-aspect-ratio: 1920/1080) {
-  :root {
-    --layout-bckgd-image-width: unset;
-    --layout-bckgd-image-height: 100vh;
-  }
+	:root {
+		--layout-bckgd-image-width: unset;
+		--layout-bckgd-image-height: 100vh;
+	}
 }
 
 @media screen and (min-aspect-ratio: 1920/1080) {
-  :root {
-    --layout-bckgd-image-width: 100vw;
-    --layout-bckgd-image-height: unset;
-  }
+	:root {
+		--layout-bckgd-image-width: 100vw;
+		--layout-bckgd-image-height: unset;
+	}
 }
 
 @media screen and (orientation: portrait) {
-  :root {
-    --layout-margin-top: 3vw;
-    --layout-margin-bottom: 20vw;
-  }
+	:root {
+		--layout-margin-top: 3vw;
+		--layout-margin-bottom: 20vw;
+	}
 }
 
 @media screen and (orientation: landscape) {
-  :root {
-    --layout-margin-top: 15vh;
-    --layout-margin-bottom: 3vw;
-  }
+	:root {
+		--layout-margin-top: 15vh;
+		--layout-margin-bottom: 3vw;
+	}
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
+	font-family: "Quicksand", sans-serif;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
 
-  #flowery-background {
-    position: fixed;
-    background-image: url("/assets/images/sophie/flowery_background.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-  }
+	#flowery-background {
+		position: fixed;
+		background-image: url("/assets/images/sophie/flowery_background.svg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100vw;
+		height: 100vh;
+		z-index: -1;
+	}
 
-  .container-main-outer {
-    height: 100%;
-    width: 100%;
-    overflow: auto;
+	.container-main-outer {
+		height: 100%;
+		width: 100%;
+		overflow: auto;
 
-    .container-main {
-      width: 40%;
-      display: flex;
-      flex-direction: column;
-      margin: 5rem auto;
+		.container-main {
+			width: 40%;
+			display: flex;
+			flex-direction: column;
+			margin: 5rem auto;
 
-      .image-shadow {
-        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.7)) drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.3))
-          drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.2));
-      }
-    }
-  }
+			.image-shadow {
+				filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.7)) drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.3))
+					drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.2));
+			}
+		}
+	}
 }
 
 @media screen and (orientation: portrait) {
-  body {
-    flex-direction: column;
+	body {
+		flex-direction: column;
 
-    .container-main-outer .container-main {
-      width: 80vw;
-      top: -100px;
-      left: 0;
-      right: 0;
-      margin: 1rem auto;
-      margin-bottom: 10rem; // for phone bottom render
-    }
-  }
+		.container-main-outer .container-main {
+			width: 80vw;
+			top: -100px;
+			left: 0;
+			right: 0;
+			margin: 1rem auto;
+			margin-bottom: 10rem; // for phone bottom render
+		}
+	}
 }
 
 // Light color settings
 body {
-  color: black;
-  background: #ffffff;
+	color: black;
+	background: #ffffff;
 
-  .hover-effect {
-    &:hover {
-      fill: black !important;
-      color: black !important;
-      filter: drop-shadow(1px 1px 3px #c93f63);
-    }
-  }
+	.hover-effect {
+		&:hover {
+			fill: black !important;
+			color: black !important;
+			filter: drop-shadow(1px 1px 3px #c93f63);
+		}
+	}
 }
 
 // Dark color settings
 body.dark {
-  color: white;
-  background: #101010;
+	color: white;
+	background: #101010;
 
-  .hover-effect {
-    &:hover {
-      fill: white !important;
-      color: white !important;
-      filter: drop-shadow(2px 4px 6px grey);
-    }
-  }
+	.hover-effect {
+		&:hover {
+			fill: white !important;
+			color: white !important;
+			filter: drop-shadow(2px 4px 6px grey);
+		}
+	}
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 .flex-row {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 // /* Let's get this party started */

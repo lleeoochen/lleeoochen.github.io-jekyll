@@ -1,37 +1,37 @@
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-  <!-- Tab Title -->
-  <title>
-    {{ page.title }}
-  </title>
+	<!-- Tab Title -->
+	<title>
+		{{ page.title }}
+	</title>
 
-  <!-- Tab Icon -->
-  <link rel="shortcut icon"
-    type="image/x-icon"
-    href="{{ site.baseUrl }}/assets/favicon.ico" />
+	<!-- Tab Icon -->
+	<link rel="shortcut icon"
+		type="image/x-icon"
+		href="{{ site.baseUrl }}/assets/favicon.ico" />
 
-  <!-- Plugin CSS -->
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
+	<!-- Plugin CSS -->
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
 
-  <!-- Font CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<!-- Font CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ site.baseUrl }}/css/main.css">
-  <link rel="stylesheet" href="{{ site.baseUrl }}/css/modal.css">
-  <link rel="stylesheet" href="{{ site.baseUrl }}/css/menu.css">
-  <link rel="stylesheet" href="{{ site.baseUrl }}/css/card.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{{ site.baseUrl }}/css/main.css">
+	<link rel="stylesheet" href="{{ site.baseUrl }}/css/modal.css">
+	<link rel="stylesheet" href="{{ site.baseUrl }}/css/menu.css">
+	<link rel="stylesheet" href="{{ site.baseUrl }}/css/card.css">
 
-  {% for css in page.css %}
-    <link rel="stylesheet" href="{{ site.baseUrl }}/css/{{ css }}">
-  {% endfor %}
+	{% for css in page.css %}
+		<link rel="stylesheet" href="{{ site.baseUrl }}/css/{{ css }}">
+	{% endfor %}
 
 </head>

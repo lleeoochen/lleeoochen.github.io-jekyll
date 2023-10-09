@@ -1,98 +1,78 @@
 ---
 ---
 
+@import "typography";
+
 #resume-icon-link {
-  background-color: #c93f63;
+	background-color: #c93f63;
 }
 
 #resume {
-  text-align: left;
+	text-align: left;
 
-  .section-title {
-    font-size: 26px;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+	.section-title {
+		font-size: var(--font-size-xl);
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
 
-    @media (orientation: portrait) {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
-  }
+	.top-section {
+		display: flex;
+		flex-direction: column;
+		column-gap: 1rem;
+		justify-content: space-between;
 
-  .top-section {
-    display: flex;
-    flex-direction: column;
-    column-gap: 1rem;
-    justify-content: space-between;
+		.intro-section {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
 
-    .intro-section {
-      display: flex;
-      flex-direction: row;
-      // margin-bottom: 2rem;
-      justify-content: space-between;
+			@media (orientation: portrait) {
+				flex-direction: column;
+			}
 
-      .left {
-        flex: 1;
+			.left {
+				flex: 1;
 
-        &.name {
-          font-size: 50px;
-        }
-      }
+				&.name {
+					font-size: var(--font-size-xxl);
+				}
+			}
 
-      .right {
-        flex: 1;
+			.right {
+				flex: 1;
+				align-items: self-end;
+				text-align: right;
 
-        @media (orientation: portrait) {
-          align-items: self-start;
-          text-align: left;
-        }
+				@media (orientation: portrait) {
+					align-items: self-start;
+					text-align: left;
+				}
+			}
 
-        @media (orientation: landscape) {
-          align-items: self-end;
-          text-align: right;
-        }
-      }
+			.current-job-title {
+				color: #828282;
+				font-size: var(--font-size-xl);
+				margin-bottom: 0.5rem;
+			}
 
-      .current-job-title {
-        color: #828282;
-        font-size: 36px;
-        margin-bottom: 0.5rem;
-      }
+			.contact-email,
+			.contact-school {
+				color: #828282;
+				font-size: var(--font-size-m);
+				margin-bottom: 0.5rem;
+			}
+		}
 
-      .contact-email {
-        color: #828282;
-        font-size: 18px;
-        margin-bottom: 0.5rem;
-      }
-    }
+		.intro-images {
+			display: none;
+			// display: flex;
+			// gap: 1rem;
 
-    .intro-images {
-      display: none;
-      // display: flex;
-      // gap: 1rem;
-
-      // & > * {
-      //   width: 50%;
-      //   height: auto;
-      // }
-    }
-  }
-}
-
-@media (orientation: portrait) {
-  #resume {
-    .top-section {
-      .intro-section {
-        flex-direction: column;
-
-        .left.name {
-          font-size: 40px;
-        }
-
-        .current-job-title {
-          font-size: 25px;
-        }
-      }
-    }
-  }
+			// & > * {
+			//   width: 50%;
+			//   height: auto;
+			// }
+		}
+	}
 }

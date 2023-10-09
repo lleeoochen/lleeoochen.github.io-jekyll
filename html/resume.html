@@ -23,7 +23,7 @@ css:
         <div class="contact-email">
           weitungchen1998@gmail.com
         </div>
-        <div class="contact-email">
+        <div class="contact-school">
           UC Santa Barbara
         </div>
       </div>
@@ -35,10 +35,11 @@ css:
     </div>
   </div>
 
-  <div class="section-title">
+  {% comment %}
+    <div class="section-title">
     WORK EXPERIENCE
-  </div>
-  {% for data in site.data.work_experience %}
+    </div>	
+  {% endcomment %}{% for data in site.data.work_experience %}
     {% include work_experience.html data=work_experience %}
   {% endfor %}
 </div>
