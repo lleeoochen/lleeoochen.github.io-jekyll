@@ -4,11 +4,16 @@
 @import "typography";
 
 #resume-icon-link {
-	background-color: #c93f63;
+	background-color: #1e7ddc;
 }
 
 #resume {
 	text-align: left;
+	width: 50%;
+
+	@media (orientation: portrait) {
+		width: 100%;
+	}
 
 	.section-title {
 		font-size: var(--font-size-xl);
@@ -29,6 +34,7 @@
 
 			@media (orientation: portrait) {
 				flex-direction: column;
+				margin-bottom: 1rem;
 			}
 
 			.left {
@@ -54,6 +60,10 @@
 				color: #828282;
 				font-size: var(--font-size-xl);
 				margin-bottom: 0.5rem;
+
+				@media (orientation: portrait) {
+					display: none;
+				}
 			}
 
 			.contact-email,
@@ -61,6 +71,12 @@
 				color: #828282;
 				font-size: var(--font-size-m);
 				margin-bottom: 0.5rem;
+			}
+
+			.contact-school {
+				@media (orientation: portrait) {
+					display: none;
+				}
 			}
 		}
 

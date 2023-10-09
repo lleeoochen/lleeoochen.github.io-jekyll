@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	{% include head.html %}
+  {% include head.html %}
 
-	<body class="hidden">
-		<div id="flowery-background"></div>
+  <body class="hidden">
+    <div id="flowery-background"></div>
 
-		<div class="container-main-outer">
-			{{ content }}
-		</div>
-		{% include menu.html %}
-	</body>
+    <img
+      id="profile-pic"
+      class="image-shadow"
+      src="/assets/images/me.jpg" />
 
-	{% include foot.html %}
+    <div class="container-main-outer">
+      {{ content }}
+    </div>
+    {% include menu.html %}
+  </body>
+
+  {% include foot.html %}
 </html>

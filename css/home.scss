@@ -17,7 +17,7 @@
 }
 
 #home-icon-link {
-	background-color: #c93f63;
+	background-color: #1e7ddc;
 }
 
 body .container-main-outer {
@@ -33,25 +33,17 @@ body .container-main-outer {
 		gap: 1rem;
 		margin: unset;
 		max-width: unset;
-
-		#profile-pic {
-			position: relative;
-			object-fit: cover;
-			height: var(--home-profile-pic-size);
-			margin-left: 15rem;
-			border-radius: 50%;
-
-			// for animation
-			left: -100px;
-			opacity: 0;
-		}
+		background-color: unset;
+		backdrop-filter: unset;
 
 		.signature {
 			text-align: left;
+			display: flex;
 
 			svg {
 				height: 100%;
 				width: var(--home-signature-width);
+				margin: auto;
 			}
 		}
 	}
@@ -62,14 +54,14 @@ body .container-main-outer {
 		padding-bottom: 0;
 		margin: 0 auto;
 
-		#profile-pic {
-			left: 0;
-			top: -100px;
-			max-width: unset;
-			max-height: 0%;
-			width: 100%;
-			margin-left: 0rem;
-		}
+		// #profile-pic {
+		// 	left: 0;
+		// 	top: -100px;
+		// 	max-width: unset;
+		// 	max-height: 0%;
+		// 	width: 100%;
+		// 	margin-left: 0rem;
+		// }
 	}
 }
 

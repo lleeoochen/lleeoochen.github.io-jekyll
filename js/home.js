@@ -25,8 +25,9 @@ anime.timeline(
 ).add(
 	{
 		targets: ".signature path",
-		fill: "#d397a7",
-		stroke: "#d397a7"
+		fill: "#ffffff",
+		stroke: "#ffffff",
+		filter: "drop-shadow(0px 3px 2px rgba(0, 0, 0, .7))",
 	},
 	0
 );
@@ -34,12 +35,9 @@ anime.timeline(
 anime(
 	{
 		targets: "#profile-pic",
-		translateX: isPortraitMode ? 0 : 100,
-		translateY: isPortraitMode ? 100 : 0,
+		translateX: isPortraitMode ? 0 : 0,
+		translateY: isPortraitMode ? 100 : 100,
 		opacity: 1,
-		duration: 3000,
-		delay: 1500,
-		maxWidth: isPortraitMode ? "20vh" : "20vw",
-		maxHeight: isPortraitMode ? "20vh" : "20vw",
+		duration: 1000
 	}
 );;
