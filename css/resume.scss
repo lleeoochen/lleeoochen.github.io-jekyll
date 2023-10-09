@@ -4,12 +4,13 @@
 @import "typography";
 
 #resume-icon-link {
-	background-color: #1e7ddc;
+	background-color: #104f8d;
 }
 
 #resume {
 	text-align: left;
 	width: 50%;
+	gap: 1rem;
 
 	@media (orientation: portrait) {
 		width: 100%;

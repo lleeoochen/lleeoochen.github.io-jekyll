@@ -40,4 +40,4 @@ anime(
 		opacity: 1,
 		duration: 1000
 	}
-);;
+);

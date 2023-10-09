@@ -21,7 +21,6 @@
 		height: unset;
 		flex-direction: row;
 		// background: linear-gradient(0deg, #f0bfca, #ffffff00);
-		padding-left: 0rem;
 	}
 
 	.tab-group {
@@ -58,9 +57,26 @@
 			color: white !important;
 		}
 
+		@media screen and (orientation: portrait) {
+			border-radius: 5px;
+			padding: 15px;
+			font-size: 0px;
+		}
+
 		.menu-icon {
-			width: 2vw;
-			height: 2vw;
+			width: 2rem;
+			height: 2rem;
+
+			@media screen and (orientation: portrait) {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		.menu-label {
+			@media screen and (orientation: portrait) {
+				display: none;
+			}
 		}
 	}
 
@@ -70,33 +86,6 @@
 
 		@media screen and (orientation: portrait) {
 			margin-left: auto;
-		}
-	}
-}
-
-@media screen and (orientation: portrait) {
-	.menu {
-		top: unset;
-		bottom: 0;
-		width: 100%;
-		height: unset;
-		flex-direction: row;
-		// background: linear-gradient(0deg, #f0bfca, #ffffff00);
-		margin-right: 0;
-
-		.menu-icon-wrap {
-			border-radius: 5px;
-			padding: 15px;
-			font-size: 0px;
-
-			.menu-icon {
-				width: 20px;
-				height: 20px;
-			}
-
-			.menu-label {
-				display: none;
-			}
 		}
 	}
 }

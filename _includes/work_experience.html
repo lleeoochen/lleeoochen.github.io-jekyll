@@ -1,38 +1,40 @@
 <div class="work-experience">
-	<div class="title">
-		{{ data.title }}
-	</div>
-	<div class="content">
-		<div class="metadata-side">
-			<img class="logo image-shadow" src="{{ data.logo }}" />
-			<div class="metadata-info">
-				<div class="company">
-					{{ data.company }}
-				</div>
-				<div class="location">
-					{{ data.location }}
-				</div>
-				<div class="time">
-					{{ data.time }}
-				</div>
+  <div class="title-main">
+    {{ data.title }}
+  </div>
+  <div class="content">
+    <div class="metadata-side">
+			<div class="title">
+				{{ data.title }}
 			</div>
-		</div>
-		<div class="description-side">
-			<div class="description">
-				{% assign description_lines = data.description | newline_to_br | split: "<br />" %}
-				{% for description_line in description_lines %}
-					{% if description_line contains "❖" %}
-						<div class="indent">
-							{{ description_line }}
-						</div>
-					{% else %}
-						<div>
-							{{ description_line }}
-						</div>
-					{% endif %}
-				{% endfor %}
-			</div>
-		</div>
-	</div>
+      <img class="logo image-shadow" src="{{ data.logo }}" />
+      <div class="metadata-info">
+        <div class="company">
+          {{ data.company }}
+        </div>
+        <div class="location">
+          {{ data.location }}
+        </div>
+        <div class="time">
+          {{ data.time }}
+        </div>
+      </div>
+    </div>
+    <div class="description-side">
+      <div class="description">
+        {% assign description_lines = data.description | newline_to_br | split: "<br />" %}
+        {% for description_line in description_lines %}
+          {% if description_line contains "❖" %}
+            <div class="indent">
+              {{ description_line }}
+            </div>
+          {% else %}
+            <div>
+              {{ description_line }}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
-<div class="divider"></div>

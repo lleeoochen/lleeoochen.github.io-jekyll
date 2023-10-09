@@ -1,8 +1,16 @@
-- title: "Software Engineer"
+- title: "FRONTEND ENGINEER"
+  company: "Amazon (AWS)"
+  location: "Seattle, WA"
+  time: "Aug 2022 - Present"
+  logo: "/assets/companies/aws.jpg"
+  description: |
+    TBD
+
+- title: "SOFTWARE ENGINEER"
   company: "Redfin"
   location: "Seattle, WA"
-  time: "Aug 2020 - Present"
-  logo: "https://www.redfin.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
+  time: "Aug 2020 - Aug 2022"
+  logo: "/assets/companies/redfin.jpg"
   description: |
     SLO (Service Level Objective) Dashboard
     ❖ Led the frontend development for Redfin’s first SLO Dashboard from scratch, and since release, it has been used by every team at Redfin to visualize and tune their features’ SLOs.
@@ -17,27 +25,27 @@
     ❖ Designed a Python program that automatically controls disk usage for each logging service, saving hours of oncall time each week trying to prevent machines from running out of disk.
     ❖ Developed Python scripts to aggregate disk usage data from Elasticsearch API, auto-delete log indices based on the quota configuration, and report important metrics to monitor the disk health for each service and the logging platform.
 
-- title: "Software Engineering Intern"
+- title: "SOFTWARE ENGINEER INTERN"
   company: "Redfin"
   location: "Seattle, WA"
   time: "Jun – Sep 2019"
-  logo: "https://www.redfin.com/blog/wp-content/uploads/2020/03/Redfin-logo-512x512-1.jpg"
+  logo: "/assets/companies/redfin.jpg"
   description: |
     ❖ Built a SSH-certificate system that replaced hardcoded password with a secure SSH access to test machines, including various levels of access restriction and access log history.
     ❖ Developed scripts for automating managerial approval and access granting process, through calling Slack APIs and auto-generating SSH certificates.
 
-- title: "Software Engineering Intern"
+- title: "SOFTWARE ENGINEER INTERN"
   company: "ProDIGIQ"
   location: "Thousand Oaks, CA"
   time: "Jun – Sep 2018"
-  logo: "https://pbs.twimg.com/profile_images/1014967511698165760/Htjk8SSm_400x400.jpg"
+  logo: "/assets/companies/prodigiq.jpg"
   description: |
     ❖ Developed a web tool that allows engineers to visually draw polygon markups on airport maps instead of manually crunching latlng coordinates into the database.
 
-- title: "Software Engineering Intern"
+- title: "SOFTWARE ENGINEER INTERN"
   company: "Lacework"
   location: "Mountain View, CA"
   time: "Jul – Sep 2017"
-  logo: "https://content.lacework.com/wp-content/uploads/2022/01/Lacework_Shield_RGB.svg"
+  logo: "/assets/companies/lacework.jpg"
   description: |
     ❖ Built the first testing framework for Lacework engineers to automatically test and validate backend API calls against the db schema, all through a simple webpage that allows engineers to run tests with customizations on different test scopes, parameters, and testing frequency.
