@@ -1,0 +1,57 @@
+---
+permalink: /sophie-bd-2023
+title: Sophie Aka My Wonderful GF
+layout: sophie
+css:
+- "sophie_bd_2023.css"
+js:
+- "sophie_bd_2023.js"
+---
+
+<div class="container-main">
+
+  <h1>💗 Sophie's 22nd Birthday 💗</h1>
+
+  <div class="boys-a-liar sound-platform">
+    <iframe
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/3NanY0K4okhIQzL33U5Ad8?utm_source=generator&theme=0"
+      width="100%"
+      height="352"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </div>
+
+  <div class="missing-you sound-platform">
+    <iframe
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/69zgyr5HVKdInjeKpq1qHa?utm_source=generator&theme=0"
+      width="100%"
+      height="352"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </div>
+
+  <div class="found-you sound-platform">
+    <iframe
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/1Y3LN4zO1Edc2EluIoSPJN?utm_source=generator&theme=0"
+      width="100%"
+      height="352"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </div>
+
+  <div class="boyfriend-clip sound-platform">
+    <img src="/assets/images/gift.png" />
+  </div>
+
+  <div class="sound-rows">
+    {% for data in site.data.sophie_music %}
+      {% include sound_row.html data=data %}
+    {% endfor %}
+  </div>
+</div>

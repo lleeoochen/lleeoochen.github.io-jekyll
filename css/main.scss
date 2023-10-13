@@ -47,6 +47,7 @@ body {
 	}
 
 	#profile-pic {
+		display: none;
 		position: fixed;
 		object-fit: cover;
 		height: var(--home-profile-pic-size);
@@ -84,17 +85,26 @@ body {
 		overflow: auto;
 
 		.container-main {
+			height: 100vh;
+			overflow: auto;
 			width: 40%;
+			min-width: 55rem;
+			max-width: 60rem;
+
 			display: flex;
 			flex-direction: column;
+			flex-wrap: nowrap;
 			margin: 0 auto;
 			padding: 5rem;
 			background-color: #ffffff81;
 			backdrop-filter: blur(6px);
+			gap: 1rem;
 
 			@media screen and (orientation: portrait) {
 				padding: 2rem;
+				height: unset;
 				width: 100%;
+				min-width: unset;
 				// top: -100px;
 				// left: 0;
 				// right: 0;

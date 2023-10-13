@@ -12,7 +12,10 @@
 		"[scss]": {
 			"editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
 		},
-		"[liquid]": {},
+		"[liquid]": {
+			"editor.defaultFormatter": "sissel.shopify-liquid",
+			"editor.formatOnSave": true
+		},
 		"html.format.enable": false,
 		"liquid.format.endNewLine": true,
 		"terminal-in-status-bar.statusBarLabel": true,

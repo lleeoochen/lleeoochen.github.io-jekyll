@@ -11,7 +11,23 @@ js:
 ---
 
 <div id="recording" class="container-main card-container">
-	{% for data in site.data.recording %}
-		{% include card.html data=data %}
-	{% endfor %}
+
+  {% for data in site.data.recording %}
+    {% include sound_platform.html data=data %}
+  {% endfor %}
+
+  <div class="sound-platform">
+    <iframe
+      loading="lazy"
+      title="video"
+      src="/assets/icons/cello.svg"
+      frameborder="0"
+      allowfullscreen="allowfullscreen"></iframe>
+  </div>
+
+  <div class="sound-rows">
+    {% for data in site.data.recording %}
+      {% include sound_row.html data=data %}
+    {% endfor %}
+  </div>
 </div>

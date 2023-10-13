@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="hidden">
+    <div id="flowery-background"></div>
+
+    <img
+      id="profile-pic"
+      class="image-shadow"
+      src="/assets/images/me.jpg" />
+
+    <div class="container-main-outer">
+      {{ content }}
+    </div>
+    {% include menu.html %}
+
+    <div
+      id="banger-3"
+      class="banger"
+      onclick="onBangerClick('banger-3')">
+      <h1>Are you ready to find out???</h1>
+    </div>
+
+    <div
+      id="banger-2"
+      class="banger"
+      onclick="onBangerClick('banger-2')">
+      <h1>You know what day it is???</h1>
+    </div>
+
+    <div
+      id="banger-1"
+      class="banger"
+      onclick="onBangerClick('banger-1')">
+      <h1>Baby......</h1>
+    </div>
+  </body>
+
+  {% include foot.html %}
+</html>
